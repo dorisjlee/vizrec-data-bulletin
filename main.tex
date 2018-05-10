@@ -1,0 +1,75 @@
+\documentclass[11pt,dvipdfmx]{article}
+\usepackage{deauthor,times,graphicx}
+
+
+\newenvironment{denselist}{
+    \begin{list}{\small{$\bullet$}}%
+    {\setlength{\itemsep}{0ex} \setlength{\topsep}{0ex}
+    \setlength{\parsep}{0pt} \setlength{\itemindent}{0pt}
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\partopsep}{0pt}}}%
+    {\end{list}}
+
+\newcommand{\squishlist}{
+   \begin{list}{$\bullet$}
+    { \setlength{\itemsep}{0pt}
+      \setlength{\parsep}{2pt}
+      \setlength{\topsep}{0pt}
+      \setlength{\partopsep}{0pt}
+      \leftmargin=25pt
+\rightmargin=0pt
+\labelsep=5pt
+\labelwidth=10pt
+\itemindent=0pt
+\listparindent=0pt
+\itemsep=\parsep
+    }
+}
+\newcommand{\squishend}{\end{list}}
+
+% use extensively to toggle between paper and TR
+\newcommand{\eat}[1]{}
+% \newcommand{\papertext}[1]{{\leavevmode\color{blue}{#1}}}
+% \newcommand{\techreport}[1]{{\leavevmode\color{red}{#1}}}
+\newcommand{\papertext}[1]{#1}
+\newcommand{\techreport}[1]{}
+\newcommand{\boldpara}[1]{\textbf{\paragraph{#1}}}
+% de-facto paragraph format
+\newcommand{\stitle}[1]{\noindent\textbf{#1}}
+\newcommand{\tvcg}[1]{{\leavevmode\color{blue}{#1}}}
+\newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
+\newcommand{\ccut}[1]{} %confirmed cut
+\newcommand{\system}{\textsc{Storyboard}\xspace}
+\def\plaintitle{\system : Hierarchical Summary of Equivalent Visualizations across Data Subsets}
+\def\plainauthor{Doris Jung-Lin Lee*, Himel Dev*, Huizi Hu, Hazem Elmeleegy, Aditya Parameswaran}
+\def\emptyauthor{} 
+\def\plainkeywords{Data visualization, exploratory data analysis, visual query, scientific data.}
+\def\plaingeneralterms{Documentation, Standardization}
+
+\newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
+\newcommand{\dor}[1]{\textcolor{green}{Doris: #1}} 
+\newcommand{\hdev}[1]{\textcolor{magenta}{Himel: #1}}
+\newcommand{\haz}[1]{\textcolor{orange}{Hazem: #1}}
+\newcommand\notes[1]{\textcolor{red}{#1}}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% \begin{figure*}[bht]
+% \label{example}
+% \centering
+% \includegraphics[scale=0.55]{figures/US_Election_Example.pdf}
+% \caption{A set of visualizations from the 2016 Election polls. These visualizations show the percentage of votes for three candidates (Donald Trump, Hilary Clinton, and Others) in different demographic groups (based on race and gender).}
+% \end{figure*}
+test
+
+\end{document}
