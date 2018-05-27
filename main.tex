@@ -1,6 +1,6 @@
 \documentclass[11pt,dvipdfmx]{article}
 \usepackage{deauthor,times,graphicx}
-
+\usepackage{xspace}
 
 \newenvironment{denselist}{
     \begin{list}{\small{$\bullet$}}%
@@ -39,17 +39,16 @@
 \newcommand{\tvcg}[1]{{\leavevmode\color{blue}{#1}}}
 \newcommand{\cut}[1]{{\leavevmode\color{lightgray}{#1}}}
 \newcommand{\ccut}[1]{} %confirmed cut
-\newcommand{\system}{\textsc{Storyboard}\xspace}
-\def\plaintitle{\system : Hierarchical Summary of Equivalent Visualizations across Data Subsets}
-\def\plainauthor{Doris Jung-Lin Lee*, Himel Dev*, Huizi Hu, Hazem Elmeleegy, Aditya Parameswaran}
+\def\plainauthor{Doris Jung-Lin Lee, Aditya Parameswaran}
 \def\emptyauthor{} 
-\def\plainkeywords{Data visualization, exploratory data analysis, visual query, scientific data.}
+\def\plainkeywords{Data visualization, exploratory data analysis, visual querying.}
 \def\plaingeneralterms{Documentation, Standardization}
 
-\newcommand{\agp}[1]{\textcolor{blue}{Aditya: #1}}
-\newcommand{\dor}[1]{\textcolor{green}{Doris: #1}} 
-\newcommand{\hdev}[1]{\textcolor{magenta}{Himel: #1}}
-\newcommand{\haz}[1]{\textcolor{orange}{Hazem: #1}}
+\newcommand{\zv}{\textit{zenvisage}\xspace}
+\newcommand{\sbd}{\textsc{Storyboard}\xspace}
+\newcommand{\agp}[1]{\textcolor{teal}{Aditya: #1}}
+\newcommand{\dor}[1]{\textcolor{violet}{Doris: #1}} 
+
 \newcommand\notes[1]{\textcolor{red}{#1}}
 
 % To make various LaTeX processors do the right thing with page size.
@@ -63,6 +62,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\title{Towards a holistic workflow of visual data exploration 
+}
+\author{\plainauthor}
+\maketitle
+\begin{abstract}
+test abstract
+\end{abstract}
+
 % Eventually, we need to compile all of these into one single file  during submission time. 
 \input{0-Introduction}
 \input{1-PreciseSearch}
@@ -70,4 +77,6 @@
 \input{3-IntelligentSearch}
 \input{4-DatasetUnderstanding}
 \input{5-Conclusion}
+\bibliographystyle{named}
+\bibliography{reference}
 \end{document}
