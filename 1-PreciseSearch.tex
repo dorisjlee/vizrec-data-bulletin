@@ -4,23 +4,34 @@ Visual analysis is valuable often reveal important -----. However, there are man
 
 \subsection{Motivating Example}
 Astronomers from the The Dark Energy Survey (DES)\cite{Drlica-Wagner2017} are interested in finding anomalous time series to discover astrophysical transients (objects whose brightness changes dramatically as a function of time), such as supernova explosions or quasars. When trying to find celestial objects corresponding to supernovae, which have a specific pattern of brightness over time, scientists need to individually inspect the visualizations of each object until they find ones that match the pattern. With more than 400 million objects in their catalog, each having their own set of time series brightness measurement, the process of manually exploring a large number of visualizations is not only error-prone, but also overwhelming for scientists who do not have extensive knowledge about their dataset.  
-
 % Intention driven task-based querying (Precise search)
-\subsection{Challenges}
 \par The astronomy use case highlights a common challenge in exploratory data analysis (EDA). There is often a large space of possible visualizations that could be generated from a given dataset and manual search through this large collection is inefficient.
-\par There has been many related work in this ------- varying different space of possible visualizations, including visual encodings------data facets, . We will focus on 
+%\par There has been many related work in this space varying different dimensions of possible visualizations, including visual encodings~\cite{showme}, data facets, . We will focus on 
+There’s a large space of possibilities, manual search is tedious. Visualization authoring tools such as Tableau and Excel focusses on presenting one visualization at a time. There is no systematic way to create, compare, and query large collections of visualizations. 
 
 
-Data is agnostic to the user, intention ---, by building tools---, Section \ref{sec:precise} to \ref{sec:vague} have focussed on extracting what user want from data. bridging together what user want from data, what data has to offer, supporting interactive discourse between the two. 
+Propose VQS as a solution\cite{Lee2017}. 
 
-There’s a large space of possibilities, manual search is tedious. Either using one-size-fits-all statistics, templates, heuristics as a solution or problem only applicable to a subset of analytic tasks\cite{Vartak2015,Vartak2017}. Propose VQS as a solution\cite{Lee2017}. 
-\subsubsection{Usage Scenario}
 \subsection{Effortless Data Exploration with \zv}
+\par The challenges presented earlier points to a need for a tool that enables users to create and search through large collections of visualizations. We developed \zv ------. \zv is built on top of a language ZQL offers a way to iterate over collections of visualizations. Different from grammar of graphics and others which focusses on encoding and viz\cite{Wongsuphasawat2016}, ZQL is a high-level specification. Iterate over collections of visualizations \cite{Siddiqui}. We demonstrate that -----, functionalities including: 
 \begin{itemize}
-	\item ZQL offers a way to iterate over collections of visualizations\cite{Wongsuphasawat2016}. Iterate over collections of visualizations \cite{Siddiqui}
+	\item Comparing across a collection of visualizations by iterating over one or more x, y, z attributes while fixing other attributes (e.g. Find me all the cities where the housing prices starts off high then becomes lower over time. Here we vary along \textsc{city} while keeping \textsc{x=time,y=AVG(price)} fixed.)
+	\item Finding the top-k visualizations whose y values are most or least similar from a queried visualization. 
 	\item 
 \end{itemize}
+\par Breif description on what ZQL does internally, node process columns, graph optimizer
 
+\par While ZQL provides powerful mechanism, ------- we developed \zv frontend which leverages and authors ZQL queries --- full-fledged visual querying system that supports a variety of querying interactions as described in Figure~\ref{fig:modalities}. 
+
+\begin{figure}[h!]
+\label{fig:modalities}
+\centering
+\includegraphics[width=0.8\textwidth]{figures/modalities.pdf}
+\caption{\zv offers a variety of querying modalities, including: a) uploading a sample pattern from an external dataset as a query, b) sketching a query pattern, c) dragging-and-dropping an existing pattern from the dataset, and d) inputting an equation as a query.}
+\end{figure}
+
+Workflow 
+	- collection 
 \subsection{Challenges Ahead}
 The goal here is to help novice submit precise queries without SQL background, easy to use interface. Our study found that VQS does more than just this, but still not enough.
 \begin{itemize}
