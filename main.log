@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  6 JUN 2018 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  7 JUN 2018 05:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -192,52 +192,55 @@ LaTeX Warning: Citation `Drlica-Wagner2017' on page 2 undefined on input line 6
 .
 
 
-LaTeX Warning: Citation `Lee2017' on page 2 undefined on input line 15.
+LaTeX Warning: Citation `Lee2017' on page 2 undefined on input line 13.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 17.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 15.
 
 LaTeX Warning: Citation `Wongsuphasawat2016' on page 2 undefined on input line 
-18.
+16.
 
 
-LaTeX Warning: Citation `Siddiqui' on page 2 undefined on input line 18.
+LaTeX Warning: Citation `Siddiqui' on page 2 undefined on input line 16.
 
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
-) (./2-HypothesisFormation.tex
-
-LaTeX Warning: Citation `Lee2017' on page 2 undefined on input line 4.
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 [2]
-
-LaTeX Warning: Citation `Pirolli' on page 3 undefined on input line 7.
-
 <figures/modalities.pdf, id=14, 1009.83873pt x 394.04634pt>
 File: figures/modalities.pdf Graphic file (type pdf)
 <use figures/modalities.pdf>
-Package pdftex.def Info: figures/modalities.pdf  used on input line 11.
+Package pdftex.def Info: figures/modalities.pdf  used on input line 28.
 (pdftex.def)             Requested size: 390.25948pt x 152.2825pt.
+) (./2-HypothesisFormation.tex
 
-LaTeX Warning: Reference `feature_heatmap' on page 3 undefined on input line 16
-.
+LaTeX Warning: Citation `Lee2017' on page 3 undefined on input line 4.
+
+
+LaTeX Warning: Citation `Pirolli' on page 3 undefined on input line 7.
 
 [3 <./figures/modalities.pdf>]
 
-LaTeX Warning: Citation `Heer2012' on page 4 undefined on input line 29.
+LaTeX Warning: Reference `feature_heatmap' on page 4 undefined on input line 10
+.
 
 
-LaTeX Warning: Citation `Pirolli' on page 4 undefined on input line 29.
+LaTeX Warning: Citation `Heer2012' on page 4 undefined on input line 23.
+
+
+LaTeX Warning: Citation `Pirolli' on page 4 undefined on input line 23.
 
 <figures/cycle.pdf, id=49, 460.89209pt x 395.75334pt>
 File: figures/cycle.pdf Graphic file (type pdf)
 <use figures/cycle.pdf>
-Package pdftex.def Info: figures/cycle.pdf  used on input line 45.
+Package pdftex.def Info: figures/cycle.pdf  used on input line 39.
 (pdftex.def)             Requested size: 243.91124pt x 209.43425pt.
-) (./3-IntelligentSearch.tex [4 <./figures/cycle.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4]) (./3-IntelligentSearch.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 11.
-<figures/storyboard.pdf, id=69, 941.08884pt x 545.25656pt>
+<figures/storyboard.pdf, id=53, 941.08884pt x 545.25656pt>
 File: figures/storyboard.pdf Graphic file (type pdf)
 <use figures/storyboard.pdf>
 Package pdftex.def Info: figures/storyboard.pdf  used on input line 16.
@@ -250,15 +253,17 @@ LaTeX Warning: Citation `police' on page 5 undefined on input line 17.
 LaTeX Warning: Citation `police' on page 5 undefined on input line 17.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 LaTeX Warning: Citation `Vartak2015' on page 5 undefined on input line 21.
 
 
 LaTeX Warning: Citation `Vartak2017' on page 5 undefined on input line 21.
 
-) (./4-DatasetUnderstanding.tex [5 <./figures/storyboard.pdf>])
-(./5-Conclusion.tex)
+) (./4-DatasetUnderstanding.tex [5 <./figures/cycle.pdf>]) (./5-Conclusion.tex)
 No file main.bbl.
-[6] (./main.aux)
+[6 <./figures/storyboard.pdf>] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -273,14 +278,14 @@ Here is how much of TeX's memory you used:
  5515 multiletter control sequences out of 15000+600000
  29660 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,875b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,25p,951b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 621628 bytes).
+Output written on main.pdf (6 pages, 623716 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
