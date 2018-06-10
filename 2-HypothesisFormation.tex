@@ -17,9 +17,7 @@ Our participatory design findings points towards future ----- in supporting a cy
 The extensibility of these systems or querying language also comes with the cost of potentially overloading the users with too many potential options to chose from. 
 
 \par When users are querying with our VQS (which we now refer to as `precise querying'), they often need to translate their ambiguous, high-level questions into an plan that consists of several interactions in series which addresses the desired query incrementally. However, the combination workflow is limited and sometimes, queries can not be expressed in this framework. Complex multistep queries. Give one example. 
-\par despite extensive work in database usability, there is an inevitable design trade-off between the query expressivity and interface usability\cite{Morton2014,Jagadish2007}. In Section~\ref{sec:vague}, we explore 
-
-
+\par despite extensive work in database usability, there is an inevitable design trade-off between the query expressivity and interface usability\cite{Morton2014,Jagadish2007}. In Section~\ref{sec:vague}, we survey related work in this area and advocate for -----. 
 
 
 Precise querying 
@@ -38,14 +36,6 @@ We employed Pirolli and Card's~\cite{Pirolli} information foraging framework for
 \par While the usage of each querying feature may vary from one participant to the next, a key design principle that came from this finding was the need for visual query systems to provide visualization recommendations that can help analysts jumpstart their exploration. We found that many users made use of the representative trends and outliers visualizations provided by \zv as contextual information to better understand their data (e.g. after a filter is applied) or to query based on these recommended visualizations (e.g. find visualizations that are similar to the one in the largest representative clusters). 
 \par Recommendation facillitate smoother flow of analysis, ensures that user is never stuck or out of ideas. it does this by going towards better data understanding, accurate understanding of the context of analysis and scope of data. should not only close the loop between the two modalities of querying and exploration, but also contribute towards ---- data understanding. In Section~\ref{sec:understanding}, we advocate the importance of building recommenders that contributes towards data understanding but also -----. 
 
-\subsection{Towards 3‘I’s of rapid hypothesis generation support}
-Given our observations from the participatory design study, we distill several desiderata for the next generation VQSs. 
-Towards 3‘I’s Interactive, Iterative, Informative (Give examples from the ZV-TVCG paper)
-\stitle{Interactive flow}:
- (how natural is it to move between analysis steps, facilitate fluid analysis and not get ``stuck'') : interactivity, feedback (latter is quite unexplored), and recommendation, expressivity (how easy is it to express what to do via interactions) and diversity of actions that could be performed.
-\stitle{Iterative}: query refinement, dialogue (not a one-shot query)
-Joining the flow: Section \ref{sec:vague} focuses on the first two items .
-\stitle{Informative}: not just task-based interestingness but more explanation-based (causality, introduce distribution awareness notion in viz-sum), focussed on data understanding, which we will discuss in Section \ref{sec:understanding}
 
 \begin{figure}[h!]
 	\label{fig:cycle}

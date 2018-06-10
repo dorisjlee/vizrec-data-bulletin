@@ -1,6 +1,7 @@
 %!TEX root = main.tex
 \section{Vague Intelligent Search\label{sec:vague}}
 Accounting for user interaction, mental models. More global objective taking into account user with the goal of dataset understanding rather than task completion.
+
 \subsection{Challenges}
 \begin{itemize}
 \item Inferring user intent in querying and context is important (both in terms of user input and what is recommended)
@@ -8,14 +9,19 @@ Accounting for user interaction, mental models. More global objective taking int
 \item The important thing here is identifying what should be done by the system v.s. requested from user. Inappropriate choice of these will result in lack of expressibility and user feeling lack of control of analysis, limiting exploration.
 \item Need for a unified framework of inference to take all of these into account (e.g. natural language, etc)
 \end{itemize}
-\subsection{\sbd: Navigating Through Data Slices with Hierarchical Summary of Visualizations}
+\subsection{Related Works}
 
-\begin{figure}[h!]
-\label{fig:modalities}
-\centering
-\includegraphics[width=0.7\linewidth]{figures/storyboard.pdf}
-\caption{Example dashboard with generated from the Police Stop Dataset \cite{police}, which contains records of police stops that resulted in a warning, ticket, or an arrest.The attributes in the dataset include driver gender, age, race, and the stop time of day, whether a search was conducted, and whether contraband was found. We generate a dashboard of visualizations with bar charts with x-axis as the stop outcome (whether the police stop resulted in a ticket, warning, or arrest/summons) and y-axis as the percentage of police stops that led to this outcome.}
-\end{figure}
+Most systems design exhibits a trade-off between how expressive can the query be and how usable the interface is. On the other hand, querying language (such as SQL) are highly expressive, however formulating SQL queries that maps user's high-level intentions to specific query statements is challenging. Therefore,  query builders have been developed to address this issue. Form-based query builders often consist of highly-usable interfaces that asks users for a specific set of information mapped onto a pre-defined query. Recent work in have asks users to provide I/O examples of the query to be synthesized\cite{Wang2017a,Wang2017,Jin2017} or enable users to graphically construct quantified queries\cite{Abouzied2012}. However, form-based query builders are often based on templated queries with limited expressiveness in their linguistic and conceptual coverage, which makes it difficult for expert users to express complex queries. The extensibility of these systems or querying language also comes with the high engineering cost, as well as potentially overloading the users with too many potential options to chose from.
 
-Data is agnostic to the user, intention ---, by building tools---, Section \ref{sec:precise} to \ref{sec:vague} have focussed on extracting what user want from data. bridging together what user want from data, what data has to offer, supporting interactive discourse between the two. 
- Either using one-size-fits-all statistics, templates, heuristics as a solution or problem only applicable to a subset of analytic tasks\cite{Vartak2015,Vartak2017}. 
+\par Given that there is no one size fit all interface for query specification for users of different expertise levels and workload, PQL is envisioned as a middle-layer between the interface and querying engine that can take in a wide spectrum of queries of different input types and degrees of specificity that could be potentially generated from different interfaces. As illustrated in Fig.\ref{system}, these can range from cold-start (no supervision) to input examples, input relations to complete specification.
+
+
+ \subsection{Towards 3‘I’s of rapid hypothesis generation support}
+Given our observations from the participatory design study, we distill several desiderata for the next generation VQSs. 
+Towards 3‘I’s Interactive, Iterative, Informative (Give examples from the ZV-TVCG paper)
+\stitle{Integrated}: should always be aware of the context of data and user 
+\stitle{Interactive flow}:
+ (how natural is it to move between analysis steps, facilitate fluid analysis and not get ``stuck'') : interactivity, feedback (latter is quite unexplored), and recommendation, expressivity (how easy is it to express what to do via interactions) and diversity of actions that could be performed.
+\stitle{Iterative}: query refinement, dialogue (not a one-shot query)
+Joining the flow: Section \ref{sec:vague} focuses on the first two items .
+\stitle{Informative}: not just task-based interestingness but more explanation-based (causality, introduce distribution awareness notion in viz-sum), focussed on data understanding, which we will discuss in Section \ref{sec:understanding}
