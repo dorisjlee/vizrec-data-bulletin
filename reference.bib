@@ -1,3 +1,35 @@
+@article{Anand2015,
+author = {Anand, Anushka and Talbot, Justin},
+doi = {10.1109/TVCG.2015.2467323},
+file = {:Users/dorislee/Dropbox/Papers/Anand, Talbot{\_}2015{\_}Automatic Selection of Partitioning Variables for Small Multiple Displays.pdf:pdf},
+number = {c},
+title = {{Automatic Selection of Partitioning Variables for Small Multiple Displays}},
+volume = {2626},
+year = {2015}
+}
+@article{Sarvghad2017,
+abstract = {Data analysis involves constantly formulating and testing new hypotheses and questions about data. When dealing with a new dataset, especially one with many dimensions, it can be cumbersome for the analyst to clearly remember which aspects of the data have been investigated (i.e., visually examined for patterns, trends, outliers etc.) and which combinations have not. Yet this information is critical to help the analyst formulate new questions that they have not already answered. We observe that for tabular data, questions are typically comprised of varying combinations of data dimensions (e.g., what are the trends of Sales and Profit for different Regions?). We propose representing analysis history from the angle of dimension coverage (i.e., which data dimensions have been investigated and in which combinations). We use scented widgets [30] to incorporate dimension coverage of the analysts' past work into interaction widgets of a visualization tool. We demonstrate how this approach can assist analysts with the question formation process. Our approach extends the concept of scented widgets to reveal aspects of one's own analysis history, and offers a different perspective on one's past work than typical visualization history tools. Results of our empirical study showed that participants with access to embedded dimension coverage information relied on this information when formulating questions, asked more questions about the data, generated more top-level findings, and showed greater breadth of their analysis without sacrificing depth.},
+author = {Sarvghad, Ali and Tory, Melanie and Mahyar, Narges},
+doi = {10.1109/TVCG.2016.2598466},
+file = {:Users/dorislee/Box/Papers/07534787.pdf:pdf},
+issn = {10772626},
+journal = {IEEE Transactions on Visualization and Computer Graphics},
+keywords = {Dimension coverage,Empirical laboratory study,Exploratory data analysis,History,Scented widgets,Tabular data},
+number = {1},
+pages = {21--30},
+title = {{Visualizing Dimension Coverage to Support Exploratory Analysis}},
+volume = {23},
+year = {2017}
+}
+
+@misc{police,
+author = "Pierson, E. and Simoiu, C. and Overgoor, J. and Corbett-Davies, S. and  Ramachandran, V. and Phillips, C. and Goel, S.",
+year = "2017",
+title = "A large-scale analysis of racial disparities in police stops across the United States",
+url = "https://openpolicing.stanford.edu/data/",
+institution = "The Stanford Open Policing Project"
+}
+
 @article{Vartak2015,
 author = {Vartak, Manasi and Madden, Samuel and Parmeswaran, Aditya N},
 file = {:Users/dorislee/Library/Application Support/Mendeley Desktop/Downloaded/Vartak, Madden, Parmeswaran - 2015 - SEEDB Supporting Visual Analytics with Data-Driven Recommendations.pdf:pdf},
@@ -77,6 +109,20 @@ year = {2017}
   biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1710-00763},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+@article{Wu2013,
+abstract = {Database users commonly explore large data sets by running ag-gregate queries that project the data down to a smaller number of points and dimensions, and visualizing the results. Often, such vi-sualizations will reveal outliers that correspond to errors or surpris-ing features of the input data set. Unfortunately, databases and vi-sualization systems do not provide a way to work backwards from an outlier point to the common properties of the (possibly many) unaggregated input tuples that correspond to that outlier. We pro-pose Scorpion, a system that takes a set of user-specified outlier points in an aggregate query result as input and finds predicates that explain the outliers in terms of properties of the input tuples that are used to compute the selected outlier results. Specifically, this explanation identifies predicates that, when applied to the in-put data, cause the outliers to disappear from the output. To find such predicates, we develop a notion of influence of a predicate on a given output, and design several algorithms that efficiently search for maximum influence predicates over the input data. We show that these algorithms can quickly find outliers in two real data sets (from a sensor deployment and a campaign finance data set), and run orders of magnitude faster than a naive search algorithm while providing comparable quality on a synthetic data set.},
+author = {Wu, Eugene and Madden, Samuel},
+doi = {10.14778/2536354.2536356},
+file = {:Users/dorislee/Library/Application Support/Mendeley Desktop/Downloaded/Wu, Madden - 2013 - Scorpion Explaining Away Outliers in Aggregate Queries.pdf:pdf},
+issn = {21508097},
+journal = {Proceedings of the VLDB Endowment},
+mendeley-groups = {Database Usability},
+number = {8},
+pages = {553--564},
+title = {{Scorpion: Explaining Away Outliers in Aggregate Queries}},
+volume = {6},
+year = {2013}
+}
 @article{Heer2012,
 abstract = {The increasing scale and availability of digital data provides an extraordinary resource for informing public policy, scientific discovery, business strategy, and even our personal lives. To get the most out of such data, however, users must be able to make sense of it: to pursue questions, uncover patterns of interest, and identify (and potentially correct) errors. In concert with data-management systems and statistical algorithms, analysis requires contextualized human judgments regarding the domain-specific significance of the clusters, trends, and outliers discovered in data. Visualization provides a powerful means of making sense of data. By mapping data attributes to visual properties such as position, size, shape, and color, visualization designers leverage perceptual skills to help users discern and interpret patterns within data.11 A single image, however, typically provides answers to, at best, a handful of questions. Instead, visual analysis typically progresses in an iterative process of view creation, exploration, and refinement. Meaningful analysis consists of repeated explorations as users develop insights about significant relationships, domain-specific contextual influences, and causal patterns. Confusing widgets, complex dialog boxes, hidden operations, incomprehensible displays, or slow response times can limit the range and depth of topics considered and may curtail thorough deliberation and introduce errors. To be most effective, visual analytics tools must support the fluent and flexible use of visualizations at rates resonant with the pace of human thought. The goal of this article is to assist designers, researchers, professional analysts, procurement officers, educators, and students in evaluating and creating visual analysis tools. We present a taxonomy of interactive dynamics that contribute to successful analytic dialogues. The taxonomy consists of 12 task types grouped into three high-level categories, as shown in table 1: (1) data and view specification (visualize, filter, sort, and derive); (2) view manipulation (select, navigate, coordinate, and organize); and (3) analysis process and provenance (record, annotate, share, and guide). These categories incorporate the critical tasks that enable iterative visual analysis, including visualization creation, interactive querying, multiview coordination, history, and collaboration. Validating and evolving this taxonomy is a community project that proceeds through feedback, critique, and refinement. Our focus on interactive elements presumes a basic familiarity with visualization design. The merits and frailties of bar charts, scatter plots, timelines, and node-link diagrams, and of the visual-encoding decisions that underlie such graphics, are certainly a central concern, but we will largely pass over them here. A number of articles and books address these topics in great detail,11,12,16,52 and we recommend them to interested readers. Within each branch of the taxonomy presented here, we describe example systems that exhibit useful interaction techniques. To be clear, these examples do not constitute an exhaustive survey; rather, each is intended to convey the nature and diversity of interactive operations. Throughout the article the term analyst refers to someone who uses visual analysis tools and not to a specific person or role. Our notion of analyst encompasses anyone seeking to understand data: traditional analysts investigating financial markets or terrorist networks, scientists uncovering new insights, journalists piecing together a story, and people tracking various facets of their lives, including blood pressure, money spent, electricity used, or miles traveled.},
 author = {Heer, Jeffrey and Shneiderman, Ben},
@@ -86,7 +132,6 @@ isbn = {1542-7730},
 issn = {15427730},
 journal = {Queue},
 keywords = {filter},
-mendeley-groups = {HILDA/Viz/Theory/Reviews,ieee-data-bulletin},
 number = {2},
 pages = {30},
 title = {{Interactive Dynamics for Visual Analysis}},
@@ -98,7 +143,6 @@ year = {2012}
 author = {Pirolli, Peter and Card, Stuart},
 file = {:Users/dorislee/Library/Application Support/Mendeley Desktop/Downloaded/Pirolli et al. - Unknown - The Sensemaking Process and Leverage Points for Analyst Technology as Identified Through Cognitive Task Analy.pdf:pdf},
 keywords = {cognitive task analysis,empirical studies,schema,sensemaking},
-mendeley-groups = {ieee-data-bulletin},
 title = {{The Sensemaking Process and Leverage Points for Analyst Technology as Identified Through Cognitive Task Analysis 3333 Coyote Hill Road 2 . A Notional Model of Analyst Sense- making}}
 }
 
@@ -109,13 +153,6 @@ title = {{The Sensemaking Process and Leverage Points for Analyst Technology as 
  year = {2016},
  url = {http://idl.cs.washington.edu/papers/compassql},
 }
-@misc{police,
-author = "Pierson, E. and Simoiu, C. and Overgoor, J. and Corbett-Davies, S. and  Ramachandran, V. and Phillips, C. and Goel, S.",
-year = "2017",
-title = "A large-scale analysis of racial disparities in police stops across the United States",
-url = "https://openpolicing.stanford.edu/data/",
-institution = "The Stanford Open Policing Project"}
-
 @article{Morton2014,
 abstract = {We present a vision of next-generation visual analytics ser- vices. We argue that these services should have three related capabilities: support visual and interactive data exploration as they do today, but also suggest relevant data to enrich visualizations, and facilitate the integration and cleaning of that data. Most importantly, they should provide all these capabilities seamlessly in the context of an uninterrupted data analysis cycle. We present the challenges and opportu- nities in building next-generation visual analytics services},
 author = {Morton, Kristi and Balazinska, Magdalena and Grossman, Dan and Mackinlay, Jock},
