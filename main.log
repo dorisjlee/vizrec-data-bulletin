@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 JUN 2018 08:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 JUN 2018 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -62,11 +62,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count90
-) (./main.aux
-
-LaTeX Warning: Label `fig:modalities' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -82,7 +78,8 @@ LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 67.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -224,52 +221,47 @@ LaTeX Warning: Reference `system' on page 6 undefined on input line 19.
 
 ) (./4-DatasetUnderstanding.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 14.
- [6]
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 8.
+
+
+LaTeX Warning: Reference `sbd' on page 6 undefined on input line 14.
+
+[6]
 <figures/storyboard.pdf, id=75, 941.08884pt x 545.25656pt>
 File: figures/storyboard.pdf Graphic file (type pdf)
 <use figures/storyboard.pdf>
-Package pdftex.def Info: figures/storyboard.pdf  used on input line 25.
+Package pdftex.def Info: figures/storyboard.pdf  used on input line 19.
 (pdftex.def)             Requested size: 341.47424pt x 197.84804pt.
-) (./5-Conclusion.tex [7 <./figures/storyboard.pdf>]) (./main.bbl
+ [7 <./figures/storyboard.pdf>]) (./5-Conclusion.tex) (./main.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 65.
-
-Underfull \hbox (badness 2486) in paragraph at lines 63--68
-[]\OT1/ptm/m/n/10.95 C. Stolte, D. Tang, and P. Han-ra-han.  Po-laris: a sys-te
-m for query, anal-y-sis, and vi-su-al-iza-tion
- []
-
-)
+ [8])
 
 Package natbib Warning: There were undefined citations.
 
-[8] (./main.aux)
+[9] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 2058 strings out of 492649
- 29204 string characters out of 6129622
- 94651 words of memory out of 5000000
- 5888 multiletter control sequences out of 15000+600000
+ 2060 strings out of 492649
+ 29218 string characters out of 6129622
+ 94636 words of memory out of 5000000
+ 5890 multiletter control sequences out of 15000+600000
  30019 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,27p,1091b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,28p,1529b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 635773 bytes).
+Output written on main.pdf (9 pages, 636798 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
