@@ -9,12 +9,16 @@ Anushka Anand and Justin Talbot.
 \bibitem[\protect\citeauthoryear{Heer and Shneiderman}{2012}]{Heer2012}
 Jeffrey Heer and Ben Shneiderman.
 \newblock {Interactive Dynamics for Visual Analysis}.
-\newblock {\em Queue}, 10(2):30, 2012.
+\newblock {\em ACM Queue}, 10(2):30, 2012.
 
-\bibitem[\protect\citeauthoryear{Jagadish and Chapman}{2007}]{Jagadish2007}
-Hv~Jagadish and Adriane Chapman.
-\newblock {Making database systems usable}.
-\newblock {\em Proceedings of the {\ldots}}, D(1):13, 2007.
+\bibitem[\protect\citeauthoryear{Jagadish \bgroup \em et al.\egroup
+  }{2007}]{Jagadish2007}
+H.~V. Jagadish, Adriane Chapman, Aaron Elkiss, Magesh Jayapandian, Yunyao Li,
+  Arnab Nandi, and Cong Yu.
+\newblock Making database systems usable.
+\newblock In {\em Proceedings of the 2007 ACM SIGMOD International Conference
+  on Management of Data}, SIGMOD '07, pages 13--24, New York, NY, USA, 2007.
+  ACM.
 
 \bibitem[\protect\citeauthoryear{Lee \bgroup \em et al.\egroup
   }{2017}]{Lee2017}
@@ -41,8 +45,23 @@ E.~Pierson, C.~Simoiu, J.~Overgoor, S.~Corbett-Davies, V.~Ramachandran,
 \bibitem[\protect\citeauthoryear{Pirolli and Card}{}]{Pirolli}
 Peter Pirolli and Stuart Card.
 \newblock {The Sensemaking Process and Leverage Points for Analyst Technology
-  as Identified Through Cognitive Task Analysis 3333 Coyote Hill Road 2 . A
-  Notional Model of Analyst Sense- making}.
+  as Identified Through Cognitive Task Analysis. A Notional Model of Analyst
+  Sensemaking}.
+
+\bibitem[\protect\citeauthoryear{Sarawagi \bgroup \em et al.\egroup
+  }{1998}]{Sarawagi1998}
+S~Sarawagi, R~Agrawal, N~Megiddo, Generalitat Valenciana Ajuntament~Valencia
+  {Univ Politecn Valencia}, and E~T H Zurich Oracle Sybase Softlab~Iberia {Edbt
+  Fdn}.
+\newblock {Discovery-driven exploration of OLAP data cubes}.
+\newblock {\em 6th International Conference on Extending Database Technology
+  (EDBT 98)}, pages 168--182, 1998.
+
+\bibitem[\protect\citeauthoryear{Sarawagi}{2000}]{Sarawagi2000}
+S.~Sarawagi.
+\newblock {User-adaptive exploration of multidimensional data}.
+\newblock {\em Proc of the 26th Intl Conference on Very Large}, pages 307--316,
+  2000.
 
 \bibitem[\protect\citeauthoryear{Sarvghad \bgroup \em et al.\egroup
   }{2017}]{Sarvghad2017}
