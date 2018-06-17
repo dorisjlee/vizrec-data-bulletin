@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  15 JUN 2018 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  17 JUN 2018 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -182,72 +182,65 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (./0-Introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-) (./1-PreciseSearch.tex [1
+) (./1-PreciseSearch.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 10.
+ [1
 
 
 Non-PDF special ignored!
 <special> papersize=8.5in,11in
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-
-
-Package natbib Warning: Citation `Drlica-Wagner2017' on page 2 undefined on inp
-ut line 6.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 12.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
-[2]
-<figures/modalities.pdf, id=14, 1009.83873pt x 394.04634pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+<figures/modalities.pdf, id=11, 1009.83873pt x 394.04634pt>
 File: figures/modalities.pdf Graphic file (type pdf)
 <use figures/modalities.pdf>
-Package pdftex.def Info: figures/modalities.pdf  used on input line 25.
+Package pdftex.def Info: figures/modalities.pdf  used on input line 23.
 (pdftex.def)             Requested size: 390.25948pt x 152.2825pt.
-) (./2-HypothesisFormation.tex [3 <./figures/modalities.pdf>]
+)
+(./2-HypothesisFormation.tex [2 <./figures/modalities.pdf>] [3]
 <figures/cycle.pdf, id=49, 460.89209pt x 395.75334pt>
 File: figures/cycle.pdf Graphic file (type pdf)
 <use figures/cycle.pdf>
-Package pdftex.def Info: figures/cycle.pdf  used on input line 43.
+Package pdftex.def Info: figures/cycle.pdf  used on input line 27.
 (pdftex.def)             Requested size: 243.91124pt x 209.43425pt.
+)
+(./3-IntelligentSearch.tex [4 <./figures/cycle.pdf>]
 
+LaTeX Warning: Reference `system' on page 5 undefined on input line 19.
+
+) (./4-DatasetUnderstanding.tex [5]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 5.
+
+
+LaTeX Warning: Reference `sbd' on page 6 undefined on input line 12.
+
+<figures/storyboard.pdf, id=72, 941.08884pt x 545.25656pt>
+File: figures/storyboard.pdf Graphic file (type pdf)
+<use figures/storyboard.pdf>
+Package pdftex.def Info: figures/storyboard.pdf  used on input line 16.
+(pdftex.def)             Requested size: 341.47424pt x 197.84804pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4]) (./3-IntelligentSearch.tex [5 <./figures/cycle.pdf>]
-
-LaTeX Warning: Reference `system' on page 6 undefined on input line 19.
-
-) (./4-DatasetUnderstanding.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 5.
- [6]
-
-LaTeX Warning: Reference `sbd' on page 7 undefined on input line 11.
-
-<figures/storyboard.pdf, id=75, 941.08884pt x 545.25656pt>
-File: figures/storyboard.pdf Graphic file (type pdf)
-<use figures/storyboard.pdf>
-Package pdftex.def Info: figures/storyboard.pdf  used on input line 15.
-(pdftex.def)             Requested size: 341.47424pt x 197.84804pt.
-[7 <./figures/storyboard.pdf>]) (./5-Conclusion.tex) (./main.bbl [8]
+[6] [7 <./figures/storyboard.pdf>]) (./5-Conclusion.tex) (./main.bbl [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 84.
+(Font)              <10.95> on input line 91.
 )
-
-Package natbib Warning: There were undefined citations.
-
 [9] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2065 strings out of 492649
- 29322 string characters out of 6129622
- 94700 words of memory out of 5000000
- 5895 multiletter control sequences out of 15000+600000
+ 2068 strings out of 492649
+ 29397 string characters out of 6129622
+ 94742 words of memory out of 5000000
+ 5898 multiletter control sequences out of 15000+600000
  30019 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,28p,1520b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -257,7 +250,7 @@ xlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 640593 bytes).
+Output written on main.pdf (9 pages, 639965 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  81 compressed objects within 1 object stream
