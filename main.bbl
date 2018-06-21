@@ -78,17 +78,18 @@ Ali Sarvghad, Melanie Tory, and Narges Mahyar.
   23(1):21--30, 2017.
 
 \bibitem[\protect\citeauthoryear{Siddiqui \bgroup \em et al.\egroup
-  }{}]{Siddiqui}
+  }{2016}]{Siddiqui2016}
 Tarique Siddiqui, Albert Kim, John Lee, Karrie Karahalios, and Aditya
   Parameswaran.
-\newblock {Effortless Data Exploration with zenvisage: An Expressive and
-  Interactive Visual Analytics System}.
+\newblock Effortless data exploration with zenvisage: An expressive and
+  interactive visual analytics system.
+\newblock {\em Proc. VLDB Endow.}, 10(4):457--468, November 2016.
 
 \bibitem[\protect\citeauthoryear{Stolte \bgroup \em et al.\egroup
   }{2002}]{Stolte2002}
 C.~Stolte, D.~Tang, and P.~Hanrahan.
-\newblock {Polaris: a system for query, analysis, and visualization
-  of$\backslash$nmultidimensional relational databases}.
+\newblock {Polaris: a system for query, analysis, and visualization of
+  multidimensional relational databases}.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   8(1):1--14, 2002.
 
