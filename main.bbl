@@ -1,5 +1,13 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\citeauthoryear{Abouzied \bgroup \em et al.\egroup
+  }{2012}]{Abouzied2012}
+Azza Abouzied, J~Hellerstein, and A~Silberschatz.
+\newblock {Dataplay: interactive tweaking and example-driven correction of
+  graphical database queries}.
+\newblock {\em Proceedings of the 25th annual ACM symposium on User interface
+  software and technology}, pages 207--217, 2012.
+
 \bibitem[\protect\citeauthoryear{Anand and Talbot}{2015}]{Anand2015}
 Anushka Anand and Justin Talbot.
 \newblock {Automatic Selection of Partitioning Variables for Small Multiple
@@ -13,10 +21,26 @@ Anushka Anand and Justin Talbot.
   Cosmology}.
 \newblock 2017.
 
+\bibitem[\protect\citeauthoryear{Gao \bgroup \em et al.\egroup
+  }{2015}]{Gao2015}
+T.a Gao, M.b Dontcheva, E.a Adar, Z.b Liu, and K.c Karahalios.
+\newblock {Datatone: Managing ambiguity in natural language interfaces for data
+  visualization}.
+\newblock {\em Proceedings of the 28th Annual ACM Symposium on User Interface
+  Software {\&} Technology - UIST '15}, pages 489--500, 2015.
+
 \bibitem[\protect\citeauthoryear{Heer and Shneiderman}{2012}]{Heer2012}
 Jeffrey Heer and Ben Shneiderman.
 \newblock {Interactive Dynamics for Visual Analysis}.
 \newblock {\em ACM Queue}, 10(2):30, 2012.
+
+\bibitem[\protect\citeauthoryear{Hoque \bgroup \em et al.\egroup
+  }{2017}]{Hoque2017}
+Enamul Hoque, Vidya Setlur, Melanie Tory, and Isaac Dykeman.
+\newblock {Applying Pragmatics Principles for Interaction with Visual
+  Analytics}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics}, (c),
+  2017.
 
 \bibitem[\protect\citeauthoryear{Jagadish \bgroup \em et al.\egroup
   }{2007}]{Jagadish2007}
@@ -41,6 +65,18 @@ Kristi Morton, Magdalena Balazinska, Dan Grossman, and Jock Mackinlay.
   Data-Analysis Systems}.
 \newblock {\em Proceedings of the VLDB Endowment, Volume 7, pp. 453–456,
   2014}, 7:453--456, 2014.
+
+\bibitem[\protect\citeauthoryear{Nandi \bgroup \em et al.\egroup
+  }{2013}]{Nandi2013}
+Arnab Nandi, Lilong Jiang, and Michael Mandel.
+\newblock {Gestural query specification}.
+\newblock {\em Proceedings of the VLDB Endowment}, 7(4):289--300, 2013.
+
+\bibitem[\protect\citeauthoryear{Olston and Chi}{2003}]{Olston2003}
+Christopher Olston and E~D~H Chi.
+\newblock {ScentTrails: Integrating browsing and searching on the Web}.
+\newblock {\em ACM Transactions on ComputerHuman Interaction TOCHI},
+  10(3):177--197, 2003.
 
 \bibitem[\protect\citeauthoryear{Pierson \bgroup \em et al.\egroup
   }{2017}]{police}
@@ -77,6 +113,14 @@ Ali Sarvghad, Melanie Tory, and Narges Mahyar.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   23(1):21--30, 2017.
 
+\bibitem[\protect\citeauthoryear{Setlur \bgroup \em et al.\egroup
+  }{2016}]{Setlur2016}
+Vidya Setlur, Sarah~E Battersby, Melanie Tory, Rich Gossweiler, and Angel~X
+  Chang.
+\newblock {Eviza: A Natural Language Interface for Visual Analysis}.
+\newblock {\em Proceedings of the 29th Annual Symposium on User Interface
+  Software and Technology - UIST '16}, pages 365--377, 2016.
+
 \bibitem[\protect\citeauthoryear{Siddiqui \bgroup \em et al.\egroup
   }{2016}]{Siddiqui2016}
 Tarique Siddiqui, Albert Kim, John Lee, Karrie Karahalios, and Aditya
@@ -100,21 +144,27 @@ Manasi Vartak, Samuel Madden, and Aditya~N Parmeswaran.
   Recommendations}.
 \newblock 2015.
 
-\bibitem[\protect\citeauthoryear{Vartak \bgroup \em et al.\egroup
-  }{2017}]{Vartak2017}
-Manasi Vartak, Silu Huang, Tarique Siddiqui, Samuel Madden, and Aditya
-  Parameswaran.
-\newblock {Towards Visualization Recommendation Systems}.
-\newblock {\em ACM SIGMOD Record}, 45(4):34--39, 2017.
-
 \bibitem[\protect\citeauthoryear{Wilkinson}{2005}]{Wilkinson2005}
 Leland Wilkinson.
 \newblock {\em The Grammar of Graphics (Statistics and Computing)}.
 \newblock Springer-Verlag, Berlin, Heidelberg, 2005.
 
+\bibitem[\protect\citeauthoryear{Willett \bgroup \em et al.\egroup
+  }{2007}]{Willett2007}
+Wesley Willett, Jeffrey Heer, and Maneesh Agrawala.
+\newblock {Scented widgets: Improving navigation cues with embedded
+  visualizations}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  13(6):1129--1136, 2007.
+
 \bibitem[\protect\citeauthoryear{Wu and Madden}{2013}]{Wu2013}
 Eugene Wu and Samuel Madden.
 \newblock {Scorpion: Explaining Away Outliers in Aggregate Queries}.
 \newblock {\em Proceedings of the VLDB Endowment}, 6(8):553--564, 2013.
+
+\bibitem[\protect\citeauthoryear{Zloof}{1975}]{Zloof1975}
+Moshe~M Zloof.
+\newblock {Query by Example}.
+\newblock {\em National Computer Conference}, pages 431--438, 1975.
 
 \end{thebibliography}
