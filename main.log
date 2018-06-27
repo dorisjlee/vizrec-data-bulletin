@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  27 JUN 2018 08:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  27 JUN 2018 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -202,24 +202,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 <figures/cycle.pdf, id=1, 460.89209pt x 395.75334pt>
 File: figures/cycle.pdf Graphic file (type pdf)
 <use figures/cycle.pdf>
-Package pdftex.def Info: figures/cycle.pdf  used on input line 11.
+Package pdftex.def Info: figures/cycle.pdf  used on input line 8.
 (pdftex.def)             Requested size: 195.126pt x 167.54378pt.
- [1
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
 
 
 Non-PDF special ignored!
 <special> papersize=8.5in,11in
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
-es/cycle.pdf>]
-
-LaTeX Warning: Reference `understanding' on page 2 undefined on input line 16.
-
-) (./1-PreciseSearch.tex
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./1-PreciseSearch.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+ [2 <./figures/cycle.pdf>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 9.
- [2]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 
@@ -250,25 +250,28 @@ File: figures/storyboard.pdf Graphic file (type pdf)
 <use figures/storyboard.pdf>
 Package pdftex.def Info: figures/storyboard.pdf  used on input line 15.
 (pdftex.def)             Requested size: 341.47424pt x 197.84804pt.
-[7 <./figures/storyboard.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] [8 <./figures/storyboard.pdf>]
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 33.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [8])
-(./5-Conclusion.tex) (./main.bbl [9] [10]) [11] (./main.aux)
+))
+(./5-Conclusion.tex [9]) (./main.bbl [10]) [11] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2591 strings out of 492649
- 35604 string characters out of 6129622
- 106243 words of memory out of 5000000
- 6409 multiletter control sequences out of 15000+600000
- 30175 words of font info for 58 fonts, out of 8000000 for 9000
+ 2609 strings out of 492649
+ 35907 string characters out of 6129622
+ 106454 words of memory out of 5000000
+ 6426 multiletter control sequences out of 15000+600000
+ 31253 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,35p,1520b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,35p,1596b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
@@ -276,7 +279,7 @@ xlive/2018/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/20
 ist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on main.pdf (11 pages, 654089 bytes).
+Output written on main.pdf (11 pages, 656041 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream

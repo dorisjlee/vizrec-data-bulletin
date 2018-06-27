@@ -14,12 +14,30 @@ Anushka Anand and Justin Talbot.
   Displays}.
 \newblock 2626(c), 2015.
 
+\bibitem[\protect\citeauthoryear{Buneman \bgroup \em et al.\egroup
+  }{2006}]{Buneman2006}
+Peter Buneman, Adriane Chapman, and James Cheney.
+\newblock Provenance management in curated databases.
+\newblock In {\em Proceedings of the 2006 ACM SIGMOD International Conference
+  on Management of Data}, SIGMOD '06, pages 539--550, New York, NY, USA, 2006.
+  ACM.
+
+\bibitem[\protect\citeauthoryear{Cui and Widom}{2003}]{Cui2003}
+Y.~Cui and J.~Widom.
+\newblock Lineage tracing for general data warehouse transformations.
+\newblock {\em The VLDB Journal}, 12(1):41--58, May 2003.
+
 \bibitem[\protect\citeauthoryear{{Drlica Wagner et
   al.}}{2017}]{Drlica-Wagner2017}
 {Drlica Wagner et al.}
 \newblock {Dark Energy Survey Year 1 Results: Photometric Data Set for
   Cosmology}.
 \newblock 2017.
+
+\bibitem[\protect\citeauthoryear{Embley}{1989}]{Embley1989}
+David~W. Embley.
+\newblock Nfql: The natural forms query language.
+\newblock {\em ACM Trans. Database Syst.}, 14(2):168--211, June 1989.
 
 \bibitem[\protect\citeauthoryear{Fast \bgroup \em et al.\egroup
   }{2018}]{Fast2018}
@@ -64,6 +82,12 @@ Doris~Jung{-}Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie
   Karahalios, and Aditya~G. Parameswaran.
 \newblock Accelerating scientific data exploration via visual query systems.
 \newblock {\em CoRR}, abs/1710.00763, 2017.
+
+\bibitem[\protect\citeauthoryear{McHugh \bgroup \em et al.\egroup
+  }{1997}]{McHugh1997}
+J~McHugh, S~Abiteboul, R~Goldman, D~Quass, and J~Widom.
+\newblock {Lore: A database management system for semistructured data}.
+\newblock {\em SIGMOD Record}, 26(3):238--247, 1997.
 
 \bibitem[\protect\citeauthoryear{Morton \bgroup \em et al.\egroup
   }{2014}]{Morton2014}
@@ -164,10 +188,24 @@ Wesley Willett, Jeffrey Heer, and Maneesh Agrawala.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   13(6):1129--1136, 2007.
 
+\bibitem[\protect\citeauthoryear{Woodruff and Stonebraker}{1997}]{Woodruff1997}
+Allison Woodruff and Michael Stonebraker.
+\newblock Supporting fine-grained data lineage in a database visualization
+  environment.
+\newblock In {\em Proceedings of the Thirteenth International Conference on
+  Data Engineering}, ICDE '97, pages 91--102, Washington, DC, USA, 1997. IEEE
+  Computer Society.
+
 \bibitem[\protect\citeauthoryear{Wu and Madden}{2013}]{Wu2013}
 Eugene Wu and Samuel Madden.
 \newblock {Scorpion: Explaining Away Outliers in Aggregate Queries}.
 \newblock {\em Proceedings of the VLDB Endowment}, 6(8):553--564, 2013.
+
+\bibitem[\protect\citeauthoryear{Yu and Jagadish}{2006}]{Yu2006}
+Cong Yu and H.~V. Jagadish.
+\newblock Schema summarization.
+\newblock In {\em Proceedings of the 32Nd International Conference on Very
+  Large Data Bases}, VLDB '06, pages 319--330. VLDB Endowment, 2006.
 
 \bibitem[\protect\citeauthoryear{Zloof}{1975}]{Zloof1975}
 Moshe~M Zloof.
