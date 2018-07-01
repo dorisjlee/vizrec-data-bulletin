@@ -54,6 +54,14 @@ T.a Gao, M.b Dontcheva, E.a Adar, Z.b Liu, and K.c Karahalios.
 \newblock {\em Proceedings of the 28th Annual ACM Symposium on User Interface
   Software {\&} Technology - UIST '15}, pages 489--500, 2015.
 
+\bibitem[\protect\citeauthoryear{Harinarayan \bgroup \em et al.\egroup
+  }{1996}]{Harinarayan1996}
+Venky Harinarayan, Anand Rajaraman, and Jeffrey~D. Ullman.
+\newblock Implementing data cubes efficiently.
+\newblock In {\em Proceedings of the 1996 ACM SIGMOD International Conference
+  on Management of Data}, SIGMOD '96, pages 205--216, New York, NY, USA, 1996.
+  ACM.
+
 \bibitem[\protect\citeauthoryear{Heer and Shneiderman}{2012}]{Heer2012}
 Jeffrey Heer and Ben Shneiderman.
 \newblock {Interactive Dynamics for Visual Analysis}.
