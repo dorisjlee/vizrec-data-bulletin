@@ -66,14 +66,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\title{Towards a Holistic Workflow for Visual Data exploration}
+\title{Towards a Holistic Workflow for Visual Data Exploration}
 \author{\plainauthor\\
 \{jlee782,adityagp\}@illinois.edu\\
 University of Illinois, Urbana-Champaign}
 \maketitle
 \begin{abstract}
-Visualization is one of the most effective and widely-used techniques for understanding data. Yet, the growing use of visualizations for exploratory data analysis presses new demands beyond simply the graphical presentation and visualization authoring capabilities offered in existing tools. In this paper, we describe three areas of visual data exploration facing these challenges. First, we introduce the problem of precise querying, which involves how to search for a desired pattern and operate on large collections of visualizations. As vague and complex queries cannot often be addressed through interactions in precise visual querying system, we introduce a class of intelligent visual querying systems that allows users to clarify and refine their queries. Finally, even with a omnipotent system that addresses any given visual query, users may not know what to query. Therefore, we advocate for recommendations that facillitates distributional and contextual awareness to help users gain more holistic data understanding, guide them towards meaningful insights, and jumpstart further inquiries. We describe the exemplary systems drawing from both our own work (\zv and \sbd) and ongoing research in the area to highlight future directions and opportunties in this space.
-
+Visualization is one of the most effective and widely-used techniques for understanding data. Yet, the growing use of visualizations for exploratory data analysis presses new demands beyond simply the graphical presentation and visualization authoring capabilities offered in existing tools. In this paper, we describe three areas of visual data exploration facing these challenges. First, we introduce the problem of precise querying: how to search for a desired trend or pattern given the large space of visualizations that could be generate from a given dataset. As vague and complex queries cannot often be addressed through interactions in precise visual querying systems, we introduce a class of intelligent visual querying systems that allows users provide feedback in order to clarify and refine their queries. Finally, even with a omnipotent system that addresses any given visual query, users may not know what to query. Therefore, we advocate for recommendations that facillitates distributional and contextual awareness to help users gain more holistic data understanding, guide them towards meaningful insights, and jumpstart further inquiries. We describe the exemplary systems drawing from both our own work (\zv and \sbd) and ongoing research in the area to highlight future directions and opportunties in this space.
 % This paper surveys the emerging field of formally reasoning
 % about and optimizing open-ended crowdsourcing, a popular and crucially important, but severely
 % understudied class of crowdsourcing—the next frontier in crowdsourced data management. The underlying
@@ -90,7 +89,9 @@ Visualization is one of the most effective and widely-used techniques for unders
 \input{3-IntelligentSearch}
 \input{4-DatasetUnderstanding}
 \input{5-Conclusion}
-
+\section*{Acknowledgement}
+A. P. acknowledges support from grants IIS-1513407 and IIS-1633755 awarded by the National Science Foundation, grant 1U54GM114838 awarded by NIGMS and 3U54EB020406-02S1 awarded by NIBIB through funds provided by the trans-NIH Big Data to Knowledge (BD2K) initiative (www.bd2k.nih.gov), and funds from Adobe, Google, and the Siebel Energy Institute. The content is solely the responsibility of the
+authors and does not necessarily represent the official views of the funding agencies and organizations. \dor{copied this from the crowdsourcing vision paper, might have to change grant number and sources accrodingly. Might also want to include acknowledgement for collaborators here too.}
 {\footnotesize \bibliographystyle{named}
 \bibliography{reference}}
 \end{document}

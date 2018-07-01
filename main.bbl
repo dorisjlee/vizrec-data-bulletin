@@ -12,7 +12,8 @@ Azza Abouzied, J~Hellerstein, and A~Silberschatz.
 Anushka Anand and Justin Talbot.
 \newblock {Automatic Selection of Partitioning Variables for Small Multiple
   Displays}.
-\newblock 2626(c), 2015.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  22(1):669 -- 677, 2015.
 
 \bibitem[\protect\citeauthoryear{Buneman \bgroup \em et al.\egroup
   }{2006}]{Buneman2006}
@@ -25,34 +26,38 @@ Peter Buneman, Adriane Chapman, and James Cheney.
 \bibitem[\protect\citeauthoryear{Cui and Widom}{2003}]{Cui2003}
 Y.~Cui and J.~Widom.
 \newblock Lineage tracing for general data warehouse transformations.
-\newblock {\em The VLDB Journal}, 12(1):41--58, May 2003.
+\newblock {\em Proceedings of the VLDB Endowment}, 12(1):41--58, May 2003.
 
 \bibitem[\protect\citeauthoryear{{Drlica Wagner et
-  al.}}{2017}]{Drlica-Wagner2017}
+  al.}}{2018}]{Drlica-Wagner2017}
 {Drlica Wagner et al.}
-\newblock {Dark Energy Survey Year 1 Results: Photometric Data Set for
-  Cosmology}.
-\newblock 2017.
+\newblock Dark energy survey year 1 results: The photometric data set for
+  cosmology.
+\newblock {\em The Astrophysical Journal Supplement Series}, 235(2):33, 2018.
 
 \bibitem[\protect\citeauthoryear{Embley}{1989}]{Embley1989}
 David~W. Embley.
 \newblock Nfql: The natural forms query language.
-\newblock {\em ACM Trans. Database Syst.}, 14(2):168--211, June 1989.
+\newblock {\em ACM Transactions on Database Systems (TODS)}, 14(2):168--211,
+  June 1989.
 
 \bibitem[\protect\citeauthoryear{Fast \bgroup \em et al.\egroup
   }{2018}]{Fast2018}
-Ethan Fast, Binbin Chen, Julia Mendelsohn, Jonathan Bassen, and Michael
+Ethan Fast, Binbin Chen, Julia Mendelsohn, Jonathan Bassen, and Michael~S.
   Bernstein.
-\newblock {Iris: A Conversational Agent for Complex Tasks}.
-\newblock {\em CHI 2018}, 2018.
+\newblock Iris: A conversational agent for complex tasks.
+\newblock In {\em Proceedings of the 2018 CHI Conference on Human Factors in
+  Computing Systems}, CHI '18, pages 473:1--473:12, New York, NY, USA, 2018.
+  ACM.
 
 \bibitem[\protect\citeauthoryear{Gao \bgroup \em et al.\egroup
   }{2015}]{Gao2015}
-T.a Gao, M.b Dontcheva, E.a Adar, Z.b Liu, and K.c Karahalios.
-\newblock {Datatone: Managing ambiguity in natural language interfaces for data
-  visualization}.
-\newblock {\em Proceedings of the 28th Annual ACM Symposium on User Interface
-  Software {\&} Technology - UIST '15}, pages 489--500, 2015.
+Tong Gao, Mira Dontcheva, Eytan Adar, Zhicheng Liu, and Karrie~G. Karahalios.
+\newblock Datatone: Managing ambiguity in natural language interfaces for data
+  visualization.
+\newblock In {\em Proceedings of the 28th Annual ACM Symposium on User
+  Interface Software \&\#38; Technology}, UIST '15, pages 489--500, New York,
+  NY, USA, 2015. ACM.
 
 \bibitem[\protect\citeauthoryear{Harinarayan \bgroup \em et al.\egroup
   }{1996}]{Harinarayan1996}
@@ -120,7 +125,7 @@ Arnab Nandi, Lilong Jiang, and Michael Mandel.
 \bibitem[\protect\citeauthoryear{Olston and Chi}{2003}]{Olston2003}
 Christopher Olston and E~D~H Chi.
 \newblock {ScentTrails: Integrating browsing and searching on the Web}.
-\newblock {\em ACM Transactions on ComputerHuman Interaction TOCHI},
+\newblock {\em ACM Transactions on Computer Human Interaction TOCHI},
   10(3):177--197, 2003.
 
 \bibitem[\protect\citeauthoryear{Pierson \bgroup \em et al.\egroup
@@ -138,18 +143,16 @@ Peter Pirolli and Stuart Card.
 
 \bibitem[\protect\citeauthoryear{Sarawagi \bgroup \em et al.\egroup
   }{1998}]{Sarawagi1998}
-S~Sarawagi, R~Agrawal, N~Megiddo, Generalitat Valenciana Ajuntament~Valencia
-  {Univ Politecn Valencia}, and E~T H Zurich Oracle Sybase Softlab~Iberia {Edbt
-  Fdn}.
-\newblock {Discovery-driven exploration of OLAP data cubes}.
-\newblock {\em 6th International Conference on Extending Database Technology
-  (EDBT 98)}, pages 168--182, 1998.
+Sunita Sarawagi, Rakesh Agrawal, and Nimrod Megiddo.
+\newblock Discovery-driven exploration of olap data cubes.
+\newblock In {\em Proceedings of the 6th International Conference on Extending
+  Database Technology: Advances in Database Technology}, EDBT '98, pages
+  168--182, Berlin, Heidelberg, 1998. Springer-Verlag.
 
 \bibitem[\protect\citeauthoryear{Sarawagi}{2000}]{Sarawagi2000}
 S.~Sarawagi.
 \newblock {User-adaptive exploration of multidimensional data}.
-\newblock {\em Proc of the 26th Intl Conference on Very Large}, pages 307--316,
-  2000.
+\newblock {\em Proceedings of the VLDB Endowment}, pages 307--316, 2000.
 
 \bibitem[\protect\citeauthoryear{Sarvghad \bgroup \em et al.\egroup
   }{2017}]{Sarvghad2017}
@@ -172,7 +175,8 @@ Tarique Siddiqui, Albert Kim, John Lee, Karrie Karahalios, and Aditya
   Parameswaran.
 \newblock Effortless data exploration with zenvisage: An expressive and
   interactive visual analytics system.
-\newblock {\em Proc. VLDB Endow.}, 10(4):457--468, November 2016.
+\newblock {\em Proceedings of the VLDB Endowment}, 10(4):457--468, November
+  2016.
 
 \bibitem[\protect\citeauthoryear{Stolte \bgroup \em et al.\egroup
   }{2002}]{Stolte2002}
@@ -218,8 +222,8 @@ Eugene Wu and Samuel Madden.
 \bibitem[\protect\citeauthoryear{Yu and Jagadish}{2006}]{Yu2006}
 Cong Yu and H.~V. Jagadish.
 \newblock Schema summarization.
-\newblock In {\em Proceedings of the 32Nd International Conference on Very
-  Large Data Bases}, VLDB '06, pages 319--330. VLDB Endowment, 2006.
+\newblock In {\em Proceedings of the VLDB Endowment}, VLDB '06, pages 319--330.
+  VLDB Endowment, 2006.
 
 \bibitem[\protect\citeauthoryear{Zloof}{1975}]{Zloof1975}
 Moshe~M Zloof.
