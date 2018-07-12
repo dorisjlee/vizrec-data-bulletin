@@ -8,6 +8,14 @@ Azza Abouzied, J~Hellerstein, and A~Silberschatz.
 \newblock {\em Proceedings of the 25th annual ACM symposium on User interface
   software and technology}, pages 207--217, 2012.
 
+\bibitem[\protect\citeauthoryear{Amar \bgroup \em et al.\egroup
+  }{2005}]{Amar2005}
+Robert Amar, James Eagan, and John Stasko.
+\newblock {Low-level components of analytic activity in information
+  visualization}.
+\newblock {\em Proceedings - IEEE Symposium on Information Visualization, INFO
+  VIS}, pages 111--117, 2005.
+
 \bibitem[\protect\citeauthoryear{Anand and Talbot}{2015}]{Anand2015}
 Anushka Anand and Justin Talbot.
 \newblock {Automatic Selection of Partitioning Variables for Small Multiple
