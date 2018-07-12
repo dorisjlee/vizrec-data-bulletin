@@ -3,8 +3,9 @@
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{xspace}
-\usepackage{xcolor}
+%\usepackage{xcolor}
 \usepackage[square,numbers]{natbib}
+\usepackage[table,xcdraw]{xcolor}
 
 \newenvironment{denselist}{
     \begin{list}{\small{$\bullet$}}%
@@ -31,6 +32,8 @@
 }
 \newcommand{\squishend}{\end{list}}
 
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{2pt}
 % use extensively to toggle between paper and TR
 \newcommand{\eat}[1]{}
 % \newcommand{\papertext}[1]{{\leavevmode\color{blue}{#1}}}
@@ -49,7 +52,7 @@
 \def\plaingeneralterms{Documentation, Standardization}
 
 \newcommand{\zv}{\textit{zenvisage}\xspace}
-\newcommand{\vida}{\textsc{vida}\xspace}
+\newcommand{\vida}{\textsc{VIDA}\xspace}
 \newcommand{\sbd}{\textsc{Storyboard}\xspace}
 \newcommand{\agp}[1]{\textcolor{green}{Aditya: #1}}
 \newcommand{\dor}[1]{\textcolor{blue}{Doris: #1}} 
@@ -67,7 +70,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-\title{From Search to Recommendation: Towards Visual Discovery Assistant}
+% \title{Towards a Visual Discovery Assistant: The New Frontier in Accelerating Visual Data Exploration}
+% \title{Towards Automating Visual Data Exploration with \\ a Visual Discovery Assistant}
+% \title{The Case for a Visual Discovery Assistant: \\ Challenges and Opportunities}
+\title{The Case for a {\em Visual Discovery Assistant}: \\ A Holistic Solution for Accelerating Visual Data Exploration}
+%\title{From Search to Recommendation: Towards Visual Discovery Assistant}
 % \title{Navigating Visualization Collections}
 %\title{Towards a Holistic Workflow for Visual Data Exploration}
 \author{\plainauthor\\

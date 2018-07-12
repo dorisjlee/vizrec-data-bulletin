@@ -1,13 +1,109 @@
 %!TEX root = main.tex
 \section{Introduction}% 
-\par With the ever-increasing complexity and size of datasets, there is a growing demand for information visualization tools that help analysts make sense of large amounts of data. Visual data exploration is one of the most commonly used technique that powerfully couples human insights with statistical and data management solutions to help analysts rapidly generate hypothesis, discover interesting trends and patterns, and identify clusters and anomalies. In this paper, we present challenges in the various stages in the cycle of visual analysis, and discuss ongoing and future directions of research that addresses these issues.
-% guides users through the acts of visual data exploration as shown in Figure~\ref{fig:cycle}, including searching for a precise visualizations, querying with a vague intent, and recommending visualizations that facilitates better data understanding and awareness. Our presentation of the spiral in Figure~\ref{fig:cycle} does not imply a monotonic sequences of actions, nor are the acts of visual data exploration mutually exclusive from one another, instead the diagram should read as a series of workflow that interleaves and forms an iterative cycle that reinforces one another. For example, as we will discuss in Section \ref{sec:hypothesis}, better data understanding can lead to better precise visual querying behaviors.
-\begin{figure}[h!]
-\label{fig:table}
-\centering
-\includegraphics[width=0.7\linewidth]{figures/table.png}
-\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}
-\end{figure}
+
+\par 
+With the ever-increasing complexity 
+and size of datasets,
+there is a growing demand for 
+information visualization tools
+that can help data scientists make sense of large
+volumes of data.
+Visualizations help discover 
+trends and patterns, 
+spot outliers and anomalies, 
+and generate or verify hypotheses.
+Moreover, 
+visualizations are visceral and intuitive: 
+they tell us stories about our data; 
+they educate, delight, inform, 
+enthrall, amaze, and clarify.
+This has led to the overwhelming popularity
+of point-and-click visualization tools like Tableau~\cite{Stolte2002},
+as well as programmatic toolkits like ggplot, D3, Vega, and matplotlib. 
+We term these tools as {\em visualization-at-a-time} approaches, since
+data scientists need to individually 
+generate each visualization (via code or interactions),
+and examine them, 
+one at a time.
+
+
+\par
+As datasets grow in size and complexity, 
+these visualization-at-a-time approaches start to break down,
+due to the limited time availability on the 
+part of the data scientists---there 
+are often too many visualizations to examine for a given 
+task, such as identifying outliers, or inferring patterns. 
+Even on a single table, 
+visualizations can be generated
+by varying the subsets of data operated on, 
+or the attributes (or combinations
+thereof) that can be visualized. 
+If we add in various visualization modalities, encodings,
+aesthetics, binning methods, and transformations,
+this space becomes even larger.
+
+
+\par
+Thus, there is a pressing need for an 
+intelligent,
+interactive, understandable, usable, and
+enjoyable tool that can help 
+data scientists navigate
+collections of visualizations.
+We term our hypothesized tool \vida,
+short for {\em VIsual Discovery Assistant}.
+Data scientists specify their discovery
+goal at a high level,
+with \vida 
+automatically 
+traversing visualizations to provide
+solutions or partial solutions for the
+specified discovery goal, thereby
+eliminating the tedium and wasted
+labor of comparable visualization-at-a-time 
+approaches.
+
+\par
+\stitle{\vida Dimensions.} In order to be a holistic solution for 
+navigating collections of visualizations,
+\vida must be able to support various discovery
+settings. 
+We organize these settings along two
+dimensions, displayed along the columns and rows (respectively) of Table~\ref{fig:table}---first, the overall discovery goal,
+and second, the degree of specificity of the goal.
+We also cite references (described later on)
+for systems that partially provide the necessary
+functionality for the given setting.
+
+\par
+ We identify five 
+common discovery goals in visual data exploration, organized
+along the columns:
+{\em finding patterns}, {\em identifying anomalies/clusters}, {\em summarizing}, 
+{\em performing comparisons}, {\em providing explanations}.
+These five goals borrow borrow from functionalities in existing
+systems, as well as related visualization task taxonomies~\cite{Heer2012,Amar2005}.
+We omit low-level goals such as filtering or sorting, since
+these functionalities are common in 
+visualization-at-a-time tools and toolkits.
+
+\par 
+ We identify three degrees of specificity
+for the discovery goal, organized along the rows:
+{\em precise}, {\em fuzzy}, {\em underspecified}
+The degree of specificity characterizes the division
+of work between how much user has to specify
+versus how much the system has to automatically
+infer and aid in accomplishing the discovery goal. 
+\agp{got until here.}
+
+\newpage
+
+
+
+
+
 \par Our paper focuses on ongoing research in interactive systems that accelerates users towards common discovery goals in visual data exploration. On the horizontal axis of Figure \ref{fig:table}, we list five different common discovery goals in visual data exploration characterized by functionalities in existing systems and related works on visualization taxonomy\cite{Heer2012,Amar2005}. The table omits the description of low-level task (such as filtering, sorting), since these functionalities are seen as commonplace in popular data analytics tools such as Excel, Tableau. The vertical axis of the table characterizes the division of work between how much the user has to specify versus how much the system automatically infer and achieve the goals that they want to accomplish. At the topmost row, we find that while most discovery goals can be accomplished through exact and complete specification to query languages and programmatic APIs to statistical tools, these systems are often not easily accesible by non-experts.
 % On the vertical axis, we describe systems with varying degree of query specificity. All discovery goals except for summarization and explaination could be performed through exact and complete specification to query languages and programmatic APIs to statistical tools. 
 \par In Section \ref{sec:precise}, we discuss how precise visual query systems help accelerate the process of finding desired visualizations, which in turn facillitates other highlighted discovery goals. Precise visual query system addresses the common problem of having to manually examine large numbers of visualizations in search of a desired pattern, which can be error-prone and inefficient. We discuss our work on \zv which allows analysts to specify their desired visualization through front-end interactions and automatically returns a ranked list of visualizations that closely matches with the input query.
@@ -48,3 +144,18 @@
 % 	\item Challenge \#4: Cold-start recommendation for data understanding. One aspect of this is to gain understanding of dataset, (e.g. representative and outliers in \zv, bottom up exploration)we discuss \sbd as one example solution addressing this problem (Section \ref{sec:understanding}).
 % \end{enumerate}{}
 %, including searching for patterns, identifying clusters and anomalies, compare, summarize, and explain, ince we wanted to --- high-level goals ---discovery, 
+
+
+
+\begin{table}[!b]
+\scriptsize
+\begin{tabular}{l|lllll}
+                                & \multicolumn{5}{c|}{Discovery Goals}                                                                                                                                                              \\ \hline
+                                & Find Patterns                       & Identify Anomalies and Clusters                    & Compare                                         & Summarize & Explain                                  \\ \hline
+                                & \multicolumn{3}{c|}{\cellcolor[HTML]{CBCEFB}Query Languages + Statistical APIs}                                                            &           &                                          \\ \hline
+Precise Visual Query System     & \multicolumn{3}{c|}{\cellcolor[HTML]{FFCE93}Zenvisage}                                                                                     &           &                                          \\ \hline
+Intelligent Visual Query System & \cellcolor[HTML]{9AFF99}ShapeSearch & \cellcolor[HTML]{FFFC9E}Scorpion, Natural Language & \cellcolor[HTML]{FFFC9E}SeeDB, Natural Language &           & \cellcolor[HTML]{FFFC9E}Natural Language \\ \hline
+Recommendation Guidance System  &                                     & \multicolumn{4}{c}{\cellcolor[HTML]{96FFFB}Storyboard}                                                                                                     
+\end{tabular}
+\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
+\end{table}
