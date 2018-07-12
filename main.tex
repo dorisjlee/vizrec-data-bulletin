@@ -49,6 +49,7 @@
 \def\plaingeneralterms{Documentation, Standardization}
 
 \newcommand{\zv}{\textit{zenvisage}\xspace}
+\newcommand{\vida}{\textsc{vida}\xspace}
 \newcommand{\sbd}{\textsc{Storyboard}\xspace}
 \newcommand{\agp}[1]{\textcolor{green}{Aditya: #1}}
 \newcommand{\dor}[1]{\textcolor{blue}{Doris: #1}} 
@@ -66,13 +67,59 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\title{Navigating Visualization Collections}
 \title{Towards a Holistic Workflow for Visual Data Exploration}
 \author{\plainauthor\\
 \{jlee782,adityagp\}@illinois.edu\\
 University of Illinois, Urbana-Champaign}
 \maketitle
 \begin{abstract}
-Visualization is one of the most effective and widely-used techniques for understanding data. Yet, the growing use of visualizations for exploratory data analysis presses new demands beyond simply the graphical presentation and visualization authoring capabilities offered in existing tools. In this paper, we describe three areas of visual data exploration facing these challenges. First, we introduce the problem of precise querying: how to search for a desired trend or pattern given the large space of visualizations that could be generate from a given dataset. As vague and complex queries cannot often be addressed through interactions in precise visual querying systems, we introduce a class of intelligent visual querying systems that allows users provide feedback in order to clarify and refine their queries. Finally, even with a omnipotent system that addresses any given visual query, users may not know what to query. Therefore, we advocate for recommendations that facillitates distributional and contextual awareness to help users gain more holistic data understanding, guide them towards meaningful insights, and jumpstart further inquiries. We describe the exemplary systems drawing from both our own work (\zv and \sbd) and ongoing research in the area to highlight future directions and opportunties in this space.
+
+Visualization is one of the 
+most effective and widely-used 
+techniques for understanding data. 
+Yet, the growing use of visualizations 
+for exploratory data analysis 
+presses new demands beyond simply 
+the graphical presentation 
+and visualization authoring 
+capabilities offered in existing tools. 
+In particular, many data analysis
+tasks involve navigating large 
+collections of visualizations to make sense
+of trends in data;
+at present, this navigation is done manually or
+programmatically. 
+We outline a vision for an
+intelligent, interactive, understandable,
+and usable tool 
+that can help automate
+this largely manual navigation: we call our tool \vida\footnote{Vida is short for {\em life} in Spanish.}---short for {VIsual Discovery Assistant}. 
+We argue that typical navigation tasks can be 
+organized across two dimensions---overall goal 
+and precision of specification.
+We organize prior work---both our own work, as well
+as other ongoing work in this area---across 
+these two dimensions, and highlight
+new research challenges.
+Together, addressing these challenges underlying \vida
+can help pave the way for a comprehensive
+solution for removing the pain points
+in visual data exploration.
+% We outline a vision for a new breed of 
+% interactive tools that can help automate
+% this largely manual navigation process. 
+% We argue that these tools need to span two 
+% dimensions---precision and task.
+% We organize prior work---both our own work, as well
+% as other ongoing work in this area---to highlight
+% new research challenges
+% across these two dimensions.
+% Together, addressing these challenges
+% can help provide a comprehensive solution 
+% for navigating and making sense of 
+% large collections of visualizations. 
+% In this paper, we describe three areas of visual data exploration facing these challenges. First, we introduce the problem of precise querying: how to search for a desired trend or pattern given the large space of visualizations that could be generate from a given dataset. As vague and complex queries cannot often be addressed through interactions in precise visual querying systems, we introduce a class of intelligent visual querying systems that allows users provide feedback in order to clarify and refine their queries. Finally, even with a omnipotent system that addresses any given visual query, users may not know what to query. Therefore, we advocate for recommendations that facillitates distributional and contextual awareness to help users gain more holistic data understanding, guide them towards meaningful insights, and jumpstart further inquiries. We describe the exemplary systems drawing from both our own work (\zv and \sbd) and ongoing research in the area to highlight future directions and opportunties in this space.
 % This paper surveys the emerging field of formally reasoning
 % about and optimizing open-ended crowdsourcing, a popular and crucially important, but severely
 % understudied class of crowdsourcing—the next frontier in crowdsourced data management. The underlying
@@ -85,6 +132,7 @@ Visualization is one of the most effective and widely-used techniques for unders
 % Eventually, we need to compile all of these into one single file  during submission time. 
 \input{0-Introduction}
 \input{1-PreciseSearch}
+
 \input{2-HypothesisFormation}
 \input{3-IntelligentSearch}
 \input{4-DatasetUnderstanding}
