@@ -110,6 +110,13 @@ Doris~Jung{-}Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie
 \newblock Accelerating scientific data exploration via visual query systems.
 \newblock {\em CoRR}, abs/1710.00763, 2017.
 
+\bibitem[\protect\citeauthoryear{Mackinlay \bgroup \em et al.\egroup
+  }{2007}]{Mackinlay2007}
+Jock~D. Mackinlay, Pat Hanrahan, and Chris Stolte.
+\newblock {Show Me: Automatic presentation for visual analysis}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  13(6):1137--1144, 2007.
+
 \bibitem[\protect\citeauthoryear{McHugh \bgroup \em et al.\egroup
   }{1997}]{McHugh1997}
 J~McHugh, S~Abiteboul, R~Goldman, D~Quass, and J~Widom.
@@ -213,6 +220,14 @@ Wesley Willett, Jeffrey Heer, and Maneesh Agrawala.
   visualizations}.
 \newblock {\em IEEE Transactions on Visualization and Computer Graphics},
   13(6):1129--1136, 2007.
+
+\bibitem[\protect\citeauthoryear{Wongsuphasawat \bgroup \em et al.\egroup
+  }{2017}]{Wongsuphasawat2017}
+Kanit Wongsuphasawat, Zening Qu, Dominik Moritz, Riley Chang, Felix Ouk,
+  Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer.
+\newblock {Voyager 2 : Augmenting Visual Analysis with Partial View
+  Specifications}.
+\newblock 2017.
 
 \bibitem[\protect\citeauthoryear{Woodruff and Stonebraker}{1997}]{Woodruff1997}
 Allison Woodruff and Michael Stonebraker.
