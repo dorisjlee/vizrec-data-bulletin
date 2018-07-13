@@ -114,19 +114,29 @@ interpret what the user might have in mind as a solution
 to their discovery goal.
 
 
-\begin{table}[!b]
+\begin{table}[!t]
 \scriptsize
 \centering
 \begin{tabular}{l|lllll}
 Degree of Specificity           & \multicolumn{5}{c}{Discovery Goals}                                                                                                                                                              \\ \hline
                                 & Find Patterns                       & Identify Anomalies/Clusters                    & Compare                                         & Summarize & Explain                                  \\ \hline
                                 %& \multicolumn{3}{c}{\cellcolor[HTML]{CBCEFB}Query Languages + Statistical APIs}    &           &   \\ \hline
-Precise (Section~\ref{sec:precise})     & \multicolumn{3}{c}{\cellcolor[HTML]{FFCE93}Zenvisage}                                                                                     &           &                                          \\ \hline
-Fuzzy (Section~\ref{sec:vague}) & \cellcolor[HTML]{9AFF99}ShapeSearch & \cellcolor[HTML]{FFFC9E}Scorpion, Natural Language & \cellcolor[HTML]{FFFC9E}SeeDB, Natural Language &           & \cellcolor[HTML]{FFFC9E}Natural Language \\ \hline
+Precise (Section~\ref{sec:precise})     & \multicolumn{3}{c}{\cellcolor[HTML]{FFCE93} Zenvisage~\cite{}, ZQL~\cite{Siddiqui2016}}                                                                                     &           &                                          \\ \hline
+Fuzzy (Section~\ref{sec:vague}) & \cellcolor[HTML]{9AFF99}ShapeSearch & \cellcolor[HTML]{FFFC9E}Scorpion, Profiler~\cite{}, Natural Language & \cellcolor[HTML]{FFFC9E}SeeDB~\cite{Vartak2015}, Natural Language &           & \cellcolor[HTML]{FFFC9E}Natural Language \\ \hline
 Minimal  (Section~\ref{sec:minimal}) &                                     & \multicolumn{4}{c}{\cellcolor[HTML]{96FFFB}Storyboard}                                                                                                     
 \end{tabular}
-\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
+\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance. \agp{fix}}\label{fig:table}
 \end{table}
+
+\par
+\stitle{\vida Interfaces.} To support the spectrum of 
+demands imposed by the
+discovery settings described above, \vida 
+must support a range of interactive input mechanisms,
+as displayed in Figure~\agp{}. 
+\vida must support both a spectrum of intuitive interactions,
+such as point-and-click, drag-and-drop, sketching, and brushing and linking,
+along with natural-language-based interactions. 
 
 
 \newpage
@@ -178,15 +188,4 @@ Minimal  (Section~\ref{sec:minimal}) &                                     & \mu
 
 
 
-\begin{table}[!b]
-\scriptsize
-\begin{tabular}{l|lllll}
-                                & \multicolumn{5}{c}{Discovery Goals}                                                                                                                                                              \\ \hline
-                                & Find Patterns                       & Identify Anomalies/Clusters                    & Compare                                         & Summarize & Explain                                  \\ \hline
-                                & \multicolumn{3}{c|}{\cellcolor[HTML]{CBCEFB}Query Languages + Statistical APIs}                                                            &           &                                          \\ \hline
-Precise Visual Query System     & \multicolumn{3}{c|}{\cellcolor[HTML]{FFCE93}Zenvisage}                                                                                     &           &                                          \\ \hline
-Intelligent Visual Query System & \cellcolor[HTML]{9AFF99}ShapeSearch & \cellcolor[HTML]{FFFC9E}Scorpion, Natural Language & \cellcolor[HTML]{FFFC9E}SeeDB, Natural Language &           & \cellcolor[HTML]{FFFC9E}Natural Language \\ \hline
-Recommendation Guidance System  &                                     & \multicolumn{4}{c}{\cellcolor[HTML]{96FFFB}Storyboard}                                                                                                     
-\end{tabular}
-\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
-\end{table}
+
