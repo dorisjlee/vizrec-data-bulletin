@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 JUL 2018 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  13 JUL 2018 06:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -249,17 +249,14 @@ File: figures/modalities.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/modalities.pdf  used on input line 21.
 (pdftex.def)             Requested size: 390.25948pt x 152.2825pt.
  [5 <./figures/modalities.pdf>])
-(./2-IntelligentSearch.tex
-<figures/ambiguity.pdf, id=55, 998.98512pt x 355.3856pt>
+(./2-IntelligentSearch.tex [6]
+<figures/ambiguity.pdf, id=58, 998.98512pt x 355.3856pt>
 File: figures/ambiguity.pdf Graphic file (type pdf)
 <use figures/ambiguity.pdf>
-Package pdftex.def Info: figures/ambiguity.pdf  used on input line 18.
+Package pdftex.def Info: figures/ambiguity.pdf  used on input line 19.
 (pdftex.def)             Requested size: 487.8225pt x 173.53854pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6] [7 <./figures/ambiguity.pdf>]) (./3-DatasetUnderstanding.tex
+ [7 <./figures/ambiguity.pdf>])
+(./3-DatasetUnderstanding.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 5.
 <figures/storyboard.pdf, id=107, 941.08884pt x 545.25656pt>
@@ -276,7 +273,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Here is how much of TeX's memory you used:
  2697 strings out of 492649
  37043 string characters out of 6129622
- 110070 words of memory out of 5000000
+ 109070 words of memory out of 5000000
  6512 multiletter control sequences out of 15000+600000
  37155 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -287,7 +284,7 @@ cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
 live/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 1632600 bytes).
+Output written on main.pdf (13 pages, 1633003 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
