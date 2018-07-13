@@ -87,7 +87,8 @@ systems, as well as related visualization task taxonomies~\cite{Heer2012,Amar200
 We omit low-level goals such as filtering or sorting, since
 these functionalities are common in 
 visualization-at-a-time tools and toolkits.
-We also omit \agp{more here}
+We also omit goals that go beyond visual data exploration,
+such as extrapolation, supervised learning, and cleaning, among others. 
 
 \par 
  We identify three degrees of specificity
@@ -112,8 +113,21 @@ it gets harder for the system to automatically
 interpret what the user might have in mind as a solution
 to their discovery goal.
 
-\agp{Describe what precise, fuzzy, and underspecified are.}
-\agp{got until here.}
+
+\begin{table}[!b]
+\scriptsize
+\centering
+\begin{tabular}{l|lllll}
+Degree of Specificity           & \multicolumn{5}{c}{Discovery Goals}                                                                                                                                                              \\ \hline
+                                & Find Patterns                       & Identify Anomalies/Clusters                    & Compare                                         & Summarize & Explain                                  \\ \hline
+                                %& \multicolumn{3}{c}{\cellcolor[HTML]{CBCEFB}Query Languages + Statistical APIs}    &           &   \\ \hline
+Precise (Section~\ref{sec:precise})     & \multicolumn{3}{c}{\cellcolor[HTML]{FFCE93}Zenvisage}                                                                                     &           &                                          \\ \hline
+Fuzzy (Section~\ref{sec:vague}) & \cellcolor[HTML]{9AFF99}ShapeSearch & \cellcolor[HTML]{FFFC9E}Scorpion, Natural Language & \cellcolor[HTML]{FFFC9E}SeeDB, Natural Language &           & \cellcolor[HTML]{FFFC9E}Natural Language \\ \hline
+Minimal  (Section~\ref{sec:minimal}) &                                     & \multicolumn{4}{c}{\cellcolor[HTML]{96FFFB}Storyboard}                                                                                                     
+\end{tabular}
+\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
+\end{table}
+
 
 \newpage
 
@@ -124,9 +138,9 @@ to their discovery goal.
  At the topmost row, we find that while most discovery goals can be accomplished through exact and complete specification to query languages and programmatic APIs to statistical tools, these systems are often not easily accesible by non-experts.
 % On the vertical axis, we describe systems with varying degree of query specificity. All discovery goals except for summarization and explaination could be performed through exact and complete specification to query languages and programmatic APIs to statistical tools. 
 \par In Section \ref{sec:precise}, we discuss how precise visual query systems help accelerate the process of finding desired visualizations, which in turn facillitates other highlighted discovery goals. Precise visual query system addresses the common problem of having to manually examine large numbers of visualizations in search of a desired pattern, which can be error-prone and inefficient. We discuss our work on \zv which allows analysts to specify their desired visualization through front-end interactions and automatically returns a ranked list of visualizations that closely matches with the input query.
-\par Examples from our \zv design study demonstrates that precise querying alone is insufficient for addressing all the visual querying demands required in real-world use cases. In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To bridge the gap between user's high-level intent and what the system operates as inputs, we advocate that future research needs to look beyond simple precise visual querying by : 1) making visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and 2) making it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:understanding}).
+\par Examples from our \zv design study demonstrates that precise querying alone is insufficient for addressing all the visual querying demands required in real-world use cases. In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To bridge the gap between user's high-level intent and what the system operates as inputs, we advocate that future research needs to look beyond simple precise visual querying by : 1) making visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and 2) making it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:minimal}).
 \par Accordingly, the next row in the table highlights a growing class of \textit{intelligent visual querying system} (IVQS) that interprets the `vagueness' of queries and allow users to tweak or refine their queries through a feedback mechanism. \dor{I think we need to expand this definition depending on the new content that we will be adding, ShapeSearch, SeeDB, Scorpion?} 
-\par To address the problem of guiding users to portions of the data that they might be interested in querying, Section~\ref{sec:understanding} introduces systems that help users become more aware of their dataset and visualize where they are in their analysis workflow. The challenge in building these systems involves understanding what types of visualizations should be recommended to facilitate data awareness. As an example, we describe our work on \sbd, a system that provides data summaries and guides users through informative subsets of data. Finally, we discuss related works on how visualizing provenance and situational information can guide users towards more informative analysis actions.
+\par To address the problem of guiding users to portions of the data that they might be interested in querying, Section~\ref{sec:minimal} introduces systems that help users become more aware of their dataset and visualize where they are in their analysis workflow. The challenge in building these systems involves understanding what types of visualizations should be recommended to facilitate data awareness. As an example, we describe our work on \sbd, a system that provides data summaries and guides users through informative subsets of data. Finally, we discuss related works on how visualizing provenance and situational information can guide users towards more informative analysis actions.
 %The bottom-most row of the figure refers to recommendation systems that guide users towards better data understanding with minimial required inputs, as described in Section~\ref{sec:understanding}.
 % \begin{figure}[h!]
 % \label{fig:cycle}
@@ -139,7 +153,7 @@ to their discovery goal.
 % \par In Section~\ref{sec:precise}, we highlight examples from our \zv design study where precise querying alone is insufficient for addressing all the visual querying demands required in real-world use cases. In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To improve the flow of visual data exploration, we advocate to make visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and make it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:understanding}).
 % \par Section~\ref{sec:vague} explains why the trade-off between expressiveness and usability in most interactive analytics system is an inherent challenge in making visual query systems more expressive. We discuss a growing class of \textit{intelligent visual querying system} (IVQS) that tries to interpret the `vagueness' of queries and allow users to tweak or refine their queries through a feedback mechanism.
 % \par To address the problem of guiding users to portions of the data that they might be interested in querying, Section~\ref{sec:understanding} introduces systems that help users become more aware of their dataset and visualize where they are in their analysis workflow. The challenge in building these systems involves understanding what types of visualizations should be recommended to facilitate data awareness. As an example, we describe our work on \sbd, a system that provides data summaries and guides users through informative subsets of data. Finally, we discuss related works on how visualizing provenance and situational information can guide users towards more informative analysis actions.
-\par Our paper mainly focusses on the search and recommendation of visualization for data exploration, but also touches on related work in generic data querying. Related works on recommendation and automatic selection of the visualization design and encoding~\cite{Wongsuphasawat2017,Mackinlay2007} as well as frameworks and grammar for interactive visualization (Vega, D3) is out of the scope of this paper.
+\par Our paper mainly focusses on the search and recommendation of visualization for data exploration, characterized by the use of visual perceptually-aware objectiveness, but also touches on related work in generic data querying. Related works on recommendation and automatic selection of the visualization design and encoding~\cite{Wongsuphasawat2017,Mackinlay2007} as well as frameworks and grammar for interactive visualization (Vega, D3) is out of the scope of this paper.
 
 % graphical presentation (ShowMe, Voyager, etc) as well as declarative specification of interactive visualization (Vega-lite, D3 papers, cite Heer and Shneiderman) is out of scope of this ---.  
 % For a more detailed survey --- , see ----\cite{Heer2012,}. 
