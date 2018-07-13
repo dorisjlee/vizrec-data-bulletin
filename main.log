@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 JUL 2018 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 JUL 2018 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -260,9 +260,6 @@ Package pdftex.def Info: figures/ambiguity.pdf  used on input line 18.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6] [7 <./figures/ambiguity.pdf>]) (./3-DatasetUnderstanding.tex
-
-LaTeX Warning: Reference `sec:hypothesis' on page 8 undefined on input line 4.
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 5.
 <figures/storyboard.pdf, id=107, 941.08884pt x 545.25656pt>
@@ -270,27 +267,27 @@ File: figures/storyboard.pdf Graphic file (type pdf)
 <use figures/storyboard.pdf>
 Package pdftex.def Info: figures/storyboard.pdf  used on input line 15.
 (pdftex.def)             Requested size: 341.47424pt x 197.84804pt.
-[8] [9 <./figures/storyboard.pdf>] [10]) (./4-Conclusion.tex) (./main.bbl
-[11] [12]) [13] (./main.aux)
 
-LaTeX Warning: There were undefined references.
 
- ) 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8] [9 <./figures/storyboard.pdf>]) (./4-Conclusion.tex [10]) (./main.bbl
+[11] [12]) [13] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2701 strings out of 492649
- 37104 string characters out of 6129622
- 110102 words of memory out of 5000000
- 6516 multiletter control sequences out of 15000+600000
+ 2697 strings out of 492649
+ 37043 string characters out of 6129622
+ 110070 words of memory out of 5000000
+ 6512 multiletter control sequences out of 15000+600000
  37155 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,35p,1721b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 1633922 bytes).
+ 41i,9n,35p,1721b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvi
+ps/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.
+pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (13 pages, 1632600 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
