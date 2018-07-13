@@ -132,12 +132,42 @@ Minimal  (Section~\ref{sec:minimal}) &                                     & \mu
 \stitle{\vida Interfaces.} To support the spectrum of 
 demands imposed by the
 discovery settings described above, \vida 
-must support a range of interactive input mechanisms,
-as displayed in Figure~\agp{}. 
-\vida must support both a spectrum of intuitive interactions,
-such as point-and-click, drag-and-drop, sketching, and brushing and linking,
-along with natural-language-based interactions. 
+must support a range of interactive input modalities,
+as displayed in Figure~\ref{fig:cycle},
+catering to a range of user expertise and preferences.
+These input modalities include 
+\begin{itemize}
+	\item natural language, via a keyword search box, or a dialog or conversational interface;
+	\item interactions, either with an existing visualization, such as brushing-and-linking or hovering, or those that construct a new one, such as drag-and-drop or sketching; and
+	\item restricted template queries, involving selection of operations and operands from a drop-down menu.
+\end{itemize}
+We will provide examples of these input modalities in subsequent sections.
+Each of these inputs are compiled down
+into a query in a query language, called \vidaql.
+Alternatively, expert users may directly invoke \vidaql queries.
+\vidaql queries will natively support the five discovery goals,
+and will also support combinations thereof, e.g., pattern search followed by 
+summarization. 
+Another important element is how much does a user actively ``request'' (pull)
+versus \vida ``recommending'' visualizations (push). 
+Given that we expect \vida to support a range of specificities,
+\vida must support both push and pull, with pull decreasing
+in importance, and push rising in importance, as we go from precise to minimal
 
+\begin{figure}[h!]
+\label{fig:cycle}
+\centering
+\includegraphics[width=0.5\linewidth]{figures/VIDA_architecture.png}
+\caption{\vida Architecture\agp{fix; convert figure into a wrapfigure}}
+\end{figure}
+
+
+% Common framework and module means there are underlying functionalities can be shared (e.g. statistical modules, data heavy-lifting operations)
+% - From the top: many different types of users (novices/experts), each with some high-level intent in one of the following modalities:
+%      - Interaction: produces as an output either through the creation a visualization (e.g. sketching, drag-and-drop) or changes upon a visualization (e.g. brushing, selections, clicks)
+%      - Partial specification includes some minimal input such as input X,Y of interest
+%      - Either that or user can directly specify their query exactly in VIDA-QL
+% - VIDA-QL contains 5 discovery modules which each have their own "push and pull" components, i.e. work with both search and recommend.
 
 \newpage
 
