@@ -203,6 +203,13 @@ Manasi Vartak, Samuel Madden, and Aditya~N Parmeswaran.
   Recommendations}.
 \newblock 2015.
 
+\bibitem[\protect\citeauthoryear{Vartak \bgroup \em et al.\egroup
+  }{2017}]{Vartak2017}
+Manasi Vartak, Silu Huang, Tarique Siddiqui, Samuel Madden, and Aditya
+  Parameswaran.
+\newblock {Towards Visualization Recommendation Systems}.
+\newblock {\em ACM SIGMOD Record}, 45(4):34--39, 2017.
+
 \bibitem[\protect\citeauthoryear{Wilkinson}{2005}]{Wilkinson2005}
 Leland Wilkinson.
 \newblock {\em The Grammar of Graphics (Statistics and Computing)}.
