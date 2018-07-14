@@ -67,14 +67,6 @@ Tong Gao, Mira Dontcheva, Eytan Adar, Zhicheng Liu, and Karrie~G. Karahalios.
   Interface Software \&\#38; Technology}, UIST '15, pages 489--500, New York,
   NY, USA, 2015. ACM.
 
-\bibitem[\protect\citeauthoryear{Harinarayan \bgroup \em et al.\egroup
-  }{1996}]{Harinarayan1996}
-Venky Harinarayan, Anand Rajaraman, and Jeffrey~D. Ullman.
-\newblock Implementing data cubes efficiently.
-\newblock In {\em Proceedings of the 1996 ACM SIGMOD International Conference
-  on Management of Data}, SIGMOD '96, pages 205--216, New York, NY, USA, 1996.
-  ACM.
-
 \bibitem[\protect\citeauthoryear{Heer and Shneiderman}{2012}]{Heer2012}
 Jeffrey Heer and Ben Shneiderman.
 \newblock {Interactive Dynamics for Visual Analysis}.
@@ -109,12 +101,6 @@ Doris~Jung{-}Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie
   Karahalios, and Aditya~G. Parameswaran.
 \newblock Accelerating scientific data exploration via visual query systems.
 \newblock {\em CoRR}, abs/1710.00763, 2017.
-
-\bibitem[\protect\citeauthoryear{McHugh \bgroup \em et al.\egroup
-  }{1997}]{McHugh1997}
-J~McHugh, S~Abiteboul, R~Goldman, D~Quass, and J~Widom.
-\newblock {Lore: A database management system for semistructured data}.
-\newblock {\em SIGMOD Record}, 26(3):238--247, 1997.
 
 \bibitem[\protect\citeauthoryear{Morton \bgroup \em et al.\egroup
   }{2014}]{Morton2014}
@@ -180,6 +166,14 @@ Tarique Siddiqui, Albert Kim, John Lee, Karrie Karahalios, and Aditya
 \newblock {\em Proceedings of the VLDB Endowment}, 10(4):457--468, November
   2016.
 
+\bibitem[\protect\citeauthoryear{Siddiqui \bgroup \em et al.\egroup
+  }{2019}]{Siddiqui2018}
+Tarique Siddiqui, Paul Luh, Zesheng Wang, Karrie Karahalios, and Aditya~G.
+  Parameswaran.
+\newblock Shapesearch: Flexible pattern-based querying of trend line
+  visualizations.
+\newblock {\em Proceedings of the VLDB Endowment}, 2019.
+
 \bibitem[\protect\citeauthoryear{Stolte \bgroup \em et al.\egroup
   }{2002}]{Stolte2002}
 C.~Stolte, D.~Tang, and P.~Hanrahan.
@@ -220,12 +214,6 @@ Allison Woodruff and Michael Stonebraker.
 Eugene Wu and Samuel Madden.
 \newblock {Scorpion: Explaining Away Outliers in Aggregate Queries}.
 \newblock {\em Proceedings of the VLDB Endowment}, 6(8):553--564, 2013.
-
-\bibitem[\protect\citeauthoryear{Yu and Jagadish}{2006}]{Yu2006}
-Cong Yu and H.~V. Jagadish.
-\newblock Schema summarization.
-\newblock In {\em Proceedings of the VLDB Endowment}, VLDB '06, pages 319--330.
-  VLDB Endowment, 2006.
 
 \bibitem[\protect\citeauthoryear{Zloof}{1975}]{Zloof1975}
 Moshe~M Zloof.
