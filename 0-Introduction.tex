@@ -123,7 +123,7 @@ Precise (Section~\ref{sec:precise}) & \multicolumn{3}{c|}{Zenvisage~\cite{Lee201
 Fuzzy (Section~\ref{sec:vague})     & ShapeSearch\cite{Siddiqui2018}   & Scorpion\cite{Wu2013}, Profiler~\cite{Kandel2012}, Natural Language & Natural Language~\cite{Fast2018,Setlur2016,Hoque2017}  &            & Natural Language \\ \hline
 Minimal (Section~\ref{sec:minimal}) &               & \multicolumn{1}{c|}{Storyboard~\cite{Lee2018}}      & SeeDB~\cite{Vartak2015}, Storyboard & Storyboard & Storyboard      
 \end{tabular}
-\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
+\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.\agp{fix this. add specificity, augment references}}\label{fig:table}
 \end{table}
 
 \par
@@ -131,7 +131,7 @@ Minimal (Section~\ref{sec:minimal}) &               & \multicolumn{1}{c|}{Storyb
 demands imposed by the
 discovery settings described above, \vida 
 must support a range of interactive input modalities,
-as displayed in Figure~\ref{fig:fig:vida_architecture},
+as displayed in Figure~\ref{fig:vida_architecture},
 catering to a range of user expertise and preferences.
 These input modalities include 
 \begin{itemize}
@@ -153,10 +153,10 @@ Given that we expect \vida to support a range of specificities,
 in importance, and push rising in importance, as we go from precise to minimal.
 
 \begin{figure}[h!]
-\label{fig:vida_architecture}
 \centering
 \includegraphics[width=0.5\linewidth]{figures/VIDA_architecture.png}
-\caption{\vida Architecture\agp{fix; convert figure into a wrapfigure}}
+\caption{\vida Architecture\agp{fix; convert figure into a wrapfigure}\label{fig:vida_architecture}
+}
 \end{figure}
 
 
@@ -176,19 +176,39 @@ The degree of specificity of the discovery goal is the factor
 that most significantly affects the architecture of \vida,
 with the complexity increasing as the specificity decreases. 
 
-\par In Section~\ref{sec:precise}, we discuss the 
-the {\em precise} setting.
+\par We begin by discussing the 
+the {\em precise} setting (Section~\ref{sec:precise}).
 Our tool, \zv, is an example of a solution for
 this setting, partially eliminating the problem
 of having to manually examine large numbers 
 of visualizations in search of a desired pattern, 
-which can be error-prone and inefficient. 
-Our \zv design study demonstrates
-that precise setting is insufficient for
+which can be error-prone and inefficient.
+Thus \zv is a natural starting point for \vida. 
+
+\par However, our \zv design study demonstrates
+that the precise setting is insufficient for
 addressing all of the demands of real-world use-cases.
-\agp{got until here.}
+In particular, we find that users do not have
+a clear understanding of their intent or specification 
+without looking
+at example visualizations or summaries of the data,
+and at the same time, their intent or specification is
+often not expressible clearly, requiring 
+vague or fuzzy high-level notions.
+
+To bridge the gap between the user's high-level
+intent and the system demands,
+we outline a set of research challenges
+that goes beyond simple precise visual querying, by
+(a) supporting a wider class of vague or ``high-level''
+queries, thereby increasing the expressiveness
+of \vida (Section~\ref{sec:vague});
+and 
+(b) making it easier to know what to query
+by recommending visualizations that provide
+a high-level understanding of the data (Section~\ref{sec:minimal}).
 
 
-In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To bridge the gap between user's high-level intent and what the system operates as inputs, we advocate that future research needs to look beyond simple precise visual querying by : 1) making visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and 2) making it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:minimal}).
-\par Accordingly, the next row in the table highlights a growing class of \textit{intelligent visual querying system} (IVQS) that interprets the `vagueness' of queries and allow users to tweak or refine their queries through a feedback mechanism. \dor{I think we need to expand this definition depending on the new content that we will be adding, ShapeSearch, SeeDB, Scorpion?} 
-\par To address the problem of guiding users to portions of the data that they might be interested in querying, Section~\ref{sec:minimal} introduces systems that help users become more aware of their dataset and visualize where they are in their analysis workflow. The challenge in building these systems involves understanding what types of visualizations should be recommended to facilitate data awareness. As an example, we describe our work on \sbd, a system that provides data summaries and guides users through informative subsets of data. Finally, we discuss related works on how visualizing provenance and situational information can guide users towards more informative analysis actions.
+% In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To bridge the gap between user's high-level intent and what the system operates as inputs, we advocate that future research needs to look beyond simple precise visual querying by : 1) making visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and 2) making it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:minimal}).
+% \par Accordingly, the next row in the table highlights a growing class of \textit{intelligent visual querying system} (IVQS) that interprets the `vagueness' of queries and allow users to tweak or refine their queries through a feedback mechanism. \dor{I think we need to expand this definition depending on the new content that we will be adding, ShapeSearch, SeeDB, Scorpion?} 
+% \par To address the problem of guiding users to portions of the data that they might be interested in querying, Section~\ref{sec:minimal} introduces systems that help users become more aware of their dataset and visualize where they are in their analysis workflow. The challenge in building these systems involves understanding what types of visualizations should be recommended to facilitate data awareness. As an example, we describe our work on \sbd, a system that provides data summaries and guides users through informative subsets of data. Finally, we discuss related works on how visualizing provenance and situational information can guide users towards more informative analysis actions.
