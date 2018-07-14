@@ -1,13 +1,89 @@
 %!TEX root = main.tex
 
 \section{The Precise Setting}\label{sec:precise}
-While visual analysis often reveal important anomalies or trends in the data~\cite{Heer2012,Morton2014}, it is often challenging to choose the right piece of data to visualize in order to realize these insights. In this section, we first motivate the use case for visual query systems and describe \zv as an example of such a system built to address these challenges.
-\subsection{Motivating Example}
-Astronomers from the the Dark Energy Survey (DES) are interested in finding anomalous time series to discover astrophysical transients (objects whose brightness changes dramatically as a function of time), such as supernova explosions or quasars~\cite{Drlica-Wagner2017}. When trying to find celestial objects corresponding to supernovae, which have a specific pattern of brightness over time, scientists need to individually inspect the visualizations of each object until they find ones that match the pattern. With more than 400 million objects in their catalog, each having their own set of time series brightness measurement, the process of manually exploring a large number of visualizations is not only error-prone, but also overwhelming for scientists who do not have extensive knowledge about their dataset. The astronomy use case highlights a common challenge in exploratory data analysis, where is often a large space of possible visualizations that could be generated from a given dataset and manual search through this large collection is inefficient. Popular visualization authoring tools such as Tableau and Excel focus on presenting one visualization at a time and there is no systematic way to create, compare, and query large collections of visualizations. 
-%% Intention driven task-based querying (Precise search)
-%\par 
-%\par There has been many related work in this space varying different dimensions of possible visualizations, including visual encodings~\cite{showme}, data facets, . We will focus on  
-\subsection{Effortless Data Exploration with \zv}
+While visual data exploration often reveals 
+important anomalies or trends 
+in the data~\cite{Heer2012,Morton2014}, 
+it is often challenging to 
+use visualization-at-a-time systems to 
+repeatedly choose the right subset of 
+data and right attributes to visualize
+in order to identify desired insights.
+In this section, we motivate
+the precise setting using a use-case from
+astronomy, and describe \zv as a system
+we built to address the underlying challenges.
+
+\subsection{Motivating Example: Finding Patterns in Astronomical Data}
+Astronomers from the the Dark Energy Survey (DES) 
+are interested in finding 
+anomalous time series 
+in order to discover 
+astrophysical transients, 
+i.e., objects whose brightness 
+changes dramatically as a function of time, 
+such as supernova explosions or quasars~\cite{Drlica-Wagner2017}. 
+When trying to find celestial objects 
+corresponding to supernovae, 
+which have a specific pattern of brightness over time, 
+scientists individually inspect the corresponding 
+visualizations for each object until 
+they find ones that match the pattern. 
+With more than 400 million objects in their catalog, 
+each having their own set of time series brightness measurement, 
+manually exploring so many 
+visualizations is not only error-prone, 
+but also overwhelming.
+The astronomers instead rely on guess-work 
+or prior evidence to explore the visualizations,
+rather than directly ``searching'' for the patterns
+that they care about. 
+While a few astronomers do use 
+programming tools, such as Python and R,
+it is cumbersome to express each new need
+via carefully hand-optimized code. 
+
+The astronomy use case highlights a 
+common challenge in visual data exploration,
+where there are a number of visualizations
+for each discovery goal,
+and manual exploration is impossible.
+There is no systematic way to create, compare, filter,
+and operate on large collections of visualizations.
+
+\subsection{Discovering Patterns, Anomalies/Clusters, and Performing Comparisons with \zv}
+
+
+\par To seamlessly operate on large collections of visualizations,
+we developed \zv, an example of a visual querying system (VQS).
+\zv is built on top of a visual query language
+called ZQL, which operates on collections of visualizations, and returns
+collections of visualizations,
+using primitives such as visualization composition,
+sorting, and filtering~\cite{Siddiqui2016}. 
+In addition, via user defined functions (also provided as built-ins),
+ZQL can compute the distance for a visualization from another---and this
+distance can be used as a building block for more complex
+operations, such as the first three discovery goals listed
+in Table~\ref{fig:table}, i.e., finding a visualization
+matching a pattern, detecting an outlier or cluster centers,
+or comparing visualizations with each other.
+Thus, ZQL operates at a level higher than
+languages for specifying visual encodings of
+individual visualizations~\cite{Stolte2002,Wilkinson2005}.
+ZQL can be used to construct a rich variety of queries,
+including the following on a real-estate dataset:
+\squishlist
+	\item {\em Find Patterns.} Find visualizations of cities whose sales price over time is similar to Manhattan. 
+	\item {\em Identify Anomalies.} Find visualizations of cities with an increasing sales price trend, with a simultaneous increasing foreclosure rate trend.
+	\item {\em Perform Comparisons.} For New York and Champaign, find visualizations on which they differ the most.
+	\item {\em Find Patterns, followed by Clusters.} For cities that are similar
+	to New York on sales price trends, find typical trends for foreclosure rates.
+\squishend
+
+\par \agp{got until here.}
+
+
 \par The challenges discussed in the previous section point to the need for a tool that enables users to create and search through large collections of visualizations. To this end, we developed \zv, a visual querying system (VQS) that accepts precise queries in the form of a desired pattern specified through frontend interactions and returns a ranked list of visualizations that look similar to the input pattern~\cite{Siddiqui2016}. \zv is built on top of a querying language called ZQL, which provides a mechanism for managing collections of visualizations. Contrary to prior work on visualization languages for specifying visual encodings of individual visualizations~\cite{Stolte2002,Wilkinson2005}, ZQL supports high-level queries over visualization collections, such as composing, sorting, filtering a collection of visualization. ZQL functionals and primitives can be constructed into rich and expressive query semantics, with functionalties including: 
 \squishlist
 	\item Finding top-k visualizations whose y values are most or least similar from a queried visualization. (e.g. Find cities with sold price over time similar to Manhattan. Varying along \textsc{city} while keeping \textsc{x = time,y = AVG(price)} fixed.) 
