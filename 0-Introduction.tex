@@ -113,19 +113,17 @@ it gets harder for the system to automatically
 interpret what the user might have in mind as a solution
 to their discovery goal.
 
-
 \begin{table}[!t]
 \scriptsize
 \centering
-\begin{tabular}{l|lllll}
-Degree of Specificity           & \multicolumn{5}{c}{Discovery Goals}                                                                                                                                                              \\ \hline
-                                & Find Patterns                       & Identify Anomalies/Clusters                    & Compare                                         & Summarize & Explain                                  \\ \hline
-                                %& \multicolumn{3}{c}{\cellcolor[HTML]{CBCEFB}Query Languages + Statistical APIs}    &           &   \\ \hline
-Precise (Section~\ref{sec:precise})     & \multicolumn{3}{c}{\cellcolor[HTML]{FFCE93} Zenvisage~\cite{}, ZQL~\cite{Siddiqui2016}}                                                                                     &           &                                          \\ \hline
-Fuzzy (Section~\ref{sec:vague}) & \cellcolor[HTML]{9AFF99}ShapeSearch & \cellcolor[HTML]{FFFC9E}Scorpion, Profiler~\cite{}, Natural Language & \cellcolor[HTML]{FFFC9E}SeeDB~\cite{Vartak2015}, Natural Language &           & \cellcolor[HTML]{FFFC9E}Natural Language \\ \hline
-Minimal  (Section~\ref{sec:minimal}) &                                     & \multicolumn{4}{c}{\cellcolor[HTML]{96FFFB}Storyboard}                                                                                                     
+\begin{tabular}{l|l|l|l|l|l}
+& \multicolumn{5}{c}{Discovery Goals}                                                                     \\ \hline
+& Find Patterns & Identify Anomalies and Clusters      & Compare           & Summarize  & Explain          \\ \hline
+Precise (Section~\ref{sec:precise}) & \multicolumn{3}{c|}{Zenvisage~\cite{Lee2017}, ZQL~\cite{Siddiqui2016}}                                      &            &                  \\ \hline
+Fuzzy (Section~\ref{sec:vague})     & ShapeSearch\cite{Siddiqui2018}   & Scorpion\cite{Wu2013}, Profiler~\cite{Kandel2012}, Natural Language & Natural Language~\cite{Fast2018,Setlur2016,Hoque2017}  &            & Natural Language \\ \hline
+Minimal (Section~\ref{sec:minimal}) &               & \multicolumn{1}{c|}{Storyboard~\cite{Lee2018}}      & SeeDB~\cite{Vartak2015}, Storyboard & Storyboard & Storyboard      
 \end{tabular}
-\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance. \agp{fix: add references, get rid of color unless it has some purpose.}}\label{fig:table}
+\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
 \end{table}
 
 \par
@@ -194,8 +192,3 @@ addressing all of the demands of real-world use-cases.
 In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To bridge the gap between user's high-level intent and what the system operates as inputs, we advocate that future research needs to look beyond simple precise visual querying by : 1) making visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and 2) making it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:minimal}).
 \par Accordingly, the next row in the table highlights a growing class of \textit{intelligent visual querying system} (IVQS) that interprets the `vagueness' of queries and allow users to tweak or refine their queries through a feedback mechanism. \dor{I think we need to expand this definition depending on the new content that we will be adding, ShapeSearch, SeeDB, Scorpion?} 
 \par To address the problem of guiding users to portions of the data that they might be interested in querying, Section~\ref{sec:minimal} introduces systems that help users become more aware of their dataset and visualize where they are in their analysis workflow. The challenge in building these systems involves understanding what types of visualizations should be recommended to facilitate data awareness. As an example, we describe our work on \sbd, a system that provides data summaries and guides users through informative subsets of data. Finally, we discuss related works on how visualizing provenance and situational information can guide users towards more informative analysis actions.
-
-
-
-
-

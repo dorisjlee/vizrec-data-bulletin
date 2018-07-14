@@ -89,11 +89,25 @@ H.~V. Jagadish, Adriane Chapman, Aaron Elkiss, Magesh Jayapandian, Yunyao Li,
   on Management of Data}, SIGMOD '07, pages 13--24, New York, NY, USA, 2007.
   ACM.
 
+\bibitem[\protect\citeauthoryear{Kandel \bgroup \em et al.\egroup
+  }{2012}]{Kandel2012}
+Sean Kandel, Ravi Parikh, Andreas Paepcke, Joseph Hellerstein, and Jeffrey
+  Heer.
+\newblock Profiler: Integrated statistical analysis and visualization for data
+  quality assessment.
+\newblock In {\em Advanced Visual Interfaces}, 2012.
+
 \bibitem[\protect\citeauthoryear{Khoussainova \bgroup \em et al.\egroup
   }{2010}]{Khoussainova2010}
 Nodira Khoussainova, YongChul Kwon, Magdalena Balazinska, and Dan Suciu.
 \newblock {Snipsuggest: Context-aware autocompletion for sql}.
 \newblock {\em Proceedings of the VLDB Endowment}, 4(1):22--33, 2010.
+
+\bibitem[\protect\citeauthoryear{Lee \bgroup \em et al.\egroup }{}]{Lee2018}
+Doris~Jung{-}Lin Lee, Himel Dev, Huizi Hu, Hazem Elmeleegy, and Aditya~G.
+  Parameswaran.
+\newblock Storyboard: Navigating through data slices with hierarchical summary
+  of visualizations.
 
 \bibitem[\protect\citeauthoryear{Lee \bgroup \em et al.\egroup
   }{2017}]{Lee2017}
