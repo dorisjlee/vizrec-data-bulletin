@@ -191,12 +191,6 @@ Sudeepa Roy and Dan Suciu.
 \newblock In {\em Proceedings of the 2014 ACM SIGMOD international conference
   on Management of data}, pages 1579--1590. ACM, 2014.
 
-\bibitem[\protect\citeauthoryear{{Ryall et al.}}{2005}]{ryall2005querylines}
-{Ryall et al.}
-\newblock Querylines: approximate query for visual browsing.
-\newblock In {\em CHI'05 Extended Abstracts on Human Factors in Computing
-  Systems}, pages 1765--1768. ACM, 2005.
-
 \bibitem[\protect\citeauthoryear{Sarawagi \bgroup \em et al.\egroup
   }{1998}]{Sarawagi1998}
 Sunita Sarawagi, Rakesh Agrawal, and Nimrod Megiddo.

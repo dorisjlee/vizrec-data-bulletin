@@ -41,7 +41,20 @@ or the attributes (or combinations
 thereof) that can be visualized. 
 If we add in various visualization modalities, encodings,
 aesthetics, binning methods, and transformations,
-this space becomes even larger. \dor{say this is out of scope for this paper, e.g. Voyager ~\cite{Wongsuphasawat2017}}
+this space becomes even larger. 
+(For this work, we focus primarily on
+the impact of varying the data subsets
+and attributes visualized---some of these
+latter concerns are the focus of recent work~\cite{Wongsuphasawat2017}.)
+
+\begin{wrapfigure}{l}{0.4\textwidth}
+\centering
+\vspace{-10pt}
+\includegraphics[width=\linewidth]{figures/dimensions_cropped.png}
+\vspace{-15pt}
+\caption{The two dimensions of discovery settings. The Y axis corresponds to discovery goals, while the X axis corresponds to increasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:dimensions}
+\vspace{-15pt}
+\end{wrapfigure}
 
 
 \par
@@ -81,13 +94,6 @@ the overall discovery goal,
 and second, the degree of specificity of the goal.
 
 
-\begin{wrapfigure}{l}{0.4\textwidth}
-\centering
-\includegraphics[width=\linewidth]{figures/dimensions_cropped.png}
-\vspace{-10pt}
-\caption{The two dimensions of discovery settings. The Y axis corresponds to discovery goals, while the X axis corresponds to increasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:dimensions}
-\vspace{-10pt}
-\end{wrapfigure}
 
 \par
  We identify five 
@@ -102,6 +108,17 @@ these functionalities are common in
 visualization-at-a-time tools and toolkits.
 We also omit goals that go beyond visual data exploration,
 such as extrapolation, supervised learning, and cleaning, among others. 
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+\centering
+\vspace{-10pt}
+\includegraphics[width=\linewidth]{figures/VIDA_architecture.png}
+\vspace{-25pt}
+\caption{\vida Architecture\label{fig:vida_architecture}
+\vspace{-15pt}
+}
+\end{wrapfigure}
+
 
 \par 
  We identify three degrees of specificity
@@ -121,7 +138,7 @@ and finally, for the minimal setting,
 the user provides a minimal specification, or
 leaves the characteristics of the solution underspecified,
 leaving it up to the system to ``fill in'' the rest.
-Naturally, as we proceed down the X axis,
+Naturally, as we proceed along the X axis,
 it gets harder for the system to automatically
 interpret what the user might have in mind as a solution
 to their discovery goal.
@@ -140,28 +157,6 @@ to their discovery goal.
 % \caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.\agp{fix this. add specificity, augment references}}\label{fig:table}
 % \end{table}
 
-\begin{table}[!t]
-\scriptsize
-\centering
-\begin{tabular}{l|l|l|p{7.5cm}}
-VQS & Discovery Goals Covered & Specificity & Interactions Supported \\ \hline
-
-Zenvisage~\cite{Lee2017,Siddiqui2016} & Find Patterns, Cluster/Outliers, Compare & Precise & Interactions (Clicking, Sketch, Drag-and-drop), Query Language \\
-TimeSearcher~\cite{hochheiser2004dynamic} & Find Patterns, Cluster/Outliers & Precise & Interactions (Clicking, Sketch) \\
-Scorpion~\cite{Wu2013} & Explain & Precise & Interactions (Clicking) \\
-
-ShapeSearch~\cite{Siddiqui2018} & Find Patterns & Fuzzy & Interactions (Sketch), Natural Language, Query Language \\
-Profiler~\cite{Kandel2012} & Compare & Fuzzy & Interactions (Clicking, Brushing-and-Linking) \\
-Data Polygamy~\cite{chirigati2016data} & Compare, Explain & Fuzzy & Query Language \\
-SeeDB~\cite{Vartak2015} & Compare & Minimal & Interactions (Clicking), Query Language \\
-Storyboard~\cite{Lee2018} & Cluster/Outliers, Compare, Summarize & Minimal & Interactions (Clicking) \\
-iDiff~\cite{Sarawagi1998,Sarawagi2000} & Compare, Explain & Minimal & Query Language \\
-
-\end{tabular}
-\vspace{-10pt}
-\caption{A Sample of Visual Query Systems}\label{fig:table}
-\vspace{-10pt}
-\end{table}
 
 
 % & \multicolumn{5}{c}{Discovery Goals}                                                                     \\ \hline
@@ -188,7 +183,6 @@ These input modalities include
 	\item interactions, either with an existing visualization, such as brushing-and-linking or hovering, or those that construct a new one, such as drag-and-drop or sketching; and
 	\item restricted template queries, involving selection of operations and operands from a drop-down menu.
 \squishend
-We will provide examples of these input modalities in subsequent sections.
 Each of these inputs are compiled down
 into a query in a query language, called \vidaql.
 Alternatively, expert users may directly invoke \vidaql queries.
@@ -201,14 +195,7 @@ Given that we expect \vida to support a range of specificities,
 \vida must support both push and pull, with pull decreasing
 in importance, and push rising in importance, as we go from precise to minimal.
 
-\begin{wrapfigure}{r}{0.5\textwidth}
-\centering
-\includegraphics[width=\linewidth]{figures/VIDA_architecture.png}
-\vspace{-10pt}
-\caption{\vida Architecture\label{fig:vida_architecture}
-\vspace{-15pt}
-}
-\end{wrapfigure}
+
 
 % \begin{wrapfigure}{r}{0.5\textwidth}
 %   \begin{center}
@@ -228,36 +215,63 @@ in importance, and push rising in importance, as we go from precise to minimal.
 
 
 \par
-\stitle{State of the Art: Current Visual Query Systems.}
+\stitle{Present Day Visual Query Systems.}
 We have described \vida so far as if no comparable capabilities
-exist in systems today.
+exist today.
 This is not the case; in Table~\ref{fig:table}, we list some examples of systems
 that partially provide the functionality of \vida,
 for certain settings and input modalities.
 We will describe some of these systems later on in the paper. 
 Since all of these systems allow users to query data {\em visually},
-we call these systems Visual Querying Systems, or VQSs for short.
-\dor{Should we say something about VQSs using perceptually-aware objectives?)}
-We restrict our attention to systems that provide 
-some interactive interface or query language to express
-the discovery goal, as well as
-some optimization capabilities to facilitate the 
-efficient search for visual insights. \dor{Our discussion in this paper focuses on the interface and interactions, rather than optimizations (sampling, pruning, etc.) commonly used in VQSs[CITE]. }
-% We also cite references (described later on)
-% for systems that partially provide the necessary
-% functionality for the given setting.
-% We call these systems Visual Querying Systems, or VQSs for short.
+we call these systems {\em Visual Querying Systems}, or VQSs for short.
+VQSs typically {\em (i)} 
+employ objectives that are perceptually-aware,
+taking into account for the fact that the results are typically
+consumed by a human data scientist, rather than an algorithm;
+{\em (ii)} 
+provide some interactive interface or declarative capabilities
+to express the discovery goal as a ``what'' rather than a ``how'';
+and
+{\em (iii)}
+possess optimization capabilities to facilitate
+the efficient search for visual insights. 
+
+
+\begin{table}[!t]
+\scriptsize
+\centering
+\begin{tabular}{l|l|l|p{7.5cm}}
+VQS & Discovery Goals Covered & Specificity & Interactions Supported \\ \hline
+
+Zenvisage~\cite{Lee2017,Siddiqui2016} & Find Patterns, Cluster/Outliers, Compare & Precise & Interactions (Clicking, Sketch, Drag-and-drop), Query Language \\
+TimeSearcher~\cite{hochheiser2004dynamic} & Find Patterns, Cluster/Outliers & Precise & Interactions (Clicking, Sketch) \\
+Scorpion~\cite{Wu2013} & Explain & Fuzzy & Interactions (Clicking) \\
+
+ShapeSearch~\cite{Siddiqui2018} & Find Patterns & Fuzzy & Interactions (Sketch), Natural Language, Query Language \\
+Profiler~\cite{Kandel2012} & Compare & Fuzzy & Interactions (Clicking, Brushing-and-Linking) \\
+Data Polygamy~\cite{chirigati2016data} & Compare, Explain & Fuzzy & Query Language \\
+SeeDB~\cite{Vartak2015} & Compare & Minimal & Interactions (Clicking), Query Language \\
+Storyboard~\cite{Lee2018} & Cluster/Outliers, Compare, Summarize & Minimal & Interactions (Clicking) \\
+iDiff~\cite{Sarawagi1998,Sarawagi2000} & Compare, Explain & Minimal & Query Language \\
+
+\end{tabular}
+\vspace{-10pt}
+\caption{A Sample of Visual Query Systems}\label{fig:table}
+\vspace{-10pt}
+\end{table}
 
 
 \par
 \stitle{Outline.}
 The rest of our paper is organized along the degree of specificity
-of discovery goal \dor{of input query?}, and we will allude to the specific discovery
+of discovery goal, and we will allude to the specific discovery
 goals as well as input modalities as we go along. 
 The degree of input specificity is the factor
 that most significantly affects the architecture of \vida,
-with the complexity increasing as the specificity decreases. 
-\dor{Clarify complexity as in system has to do more `guesswork'}
+with the complexity increasing as the specificity decreases---in that
+the system has to do more ``guesswork'' to support underspecified goals. 
+
+
 \par We begin by discussing the 
 the {\em precise} setting (Section~\ref{sec:precise}).
 We describe \zv~\cite{Siddiqui2016} 
@@ -267,6 +281,8 @@ partially eliminating the problem
 of having to manually examine large numbers 
 of visualizations for a given discovery goal, 
 which can be error-prone and inefficient.
+
+
 
 
 \par However, a design study using \zv demonstrates
@@ -293,10 +309,31 @@ by recommending visualizations that provide
 a high-level understanding of the data (Section~\ref{sec:minimal}).
 
 \stitle{Interfaces and Interactions, not Optimization.}
-\agp{We should clarify somewhere that most of our concern is going to 
-be the interfaces or query languages, as opposed to optimization,
-leveraging parallelism, MQO, sampling, pruning,
-which has seen some work --- ZQL, SeeDB, ...}\dor{addressed above}
+In this paper, we focus our attention on the interfaces,
+query languages, and capabilities, 
+and how to use them to capture discovery goals
+with varying degrees of specification, as opposed to optimization.
+Indeed, once the query is issued in some form 
+(say, translated into a \vidaql
+query),
+optimization is crucial to try to traverse the space 
+of visualizations and return results in an interactive manner.
+A range of techniques may be adopted for this purpose,
+including parallelism, multi-query optimization, sampling,
+pruning, and pre-computation~\cite{Vartak2015,Siddiqui2016}.
+We expect a similar combination of techniques to be applicable to
+each of the settings that we consider.
+So overall, to keep the scope of this paper limited, we have
+decided to avoid describing optimization aspects, 
+focusing on the interfaces and interactions instead.
+
+
+% \dor{Our discussion in this paper focuses on the interface and interactions, rather than optimizations (sampling, pruning, etc.) commonly used in VQSs[CITE]. }
+
+% \agp{We should clarify somewhere that most of our concern is going to 
+% be the interfaces or query languages, as opposed to optimization,
+% leveraging parallelism, MQO, sampling, pruning,
+% which has seen some work --- ZQL, SeeDB, ...}\dor{addressed above}
 
 % In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To bridge the gap between user's high-level intent and what the system operates as inputs, we advocate that future research needs to look beyond simple precise visual querying by : 1) making visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and 2) making it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:minimal}).
 % \par Accordingly, the next row in the table highlights a growing class of \textit{intelligent visual querying system} (IVQS) that interprets the `vagueness' of queries and allow users to tweak or refine their queries through a feedback mechanism. \dor{I think we need to expand this definition depending on the new content that we will be adding, ShapeSearch, SeeDB, Scorpion?} 

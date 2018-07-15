@@ -1,15 +1,67 @@
 %!TEX root = main.tex
 \section{The Minimal Setting: Towards Recommendations for Data Understanding}\label{sec:minimal}
 %general query-free recommendations and continual provenance
-\par While our focus in the previous sections have been on intention-driven queries, where users have some knowledge of the types of questions he may be interested in, one of the key goals of visual data exploration is to promote a better understanding of the dataset to enable users to make actionable decisions. This section surveys systems that help analysts become more aware of their dataset and visualize where they are in their analysis workflow with minimal required user input. Such systems can often be useful in situations where there is an absence of explicit signals from the user, which can happen when a user is at the beginning of their analysis (commonly known as the `cold-start' problem) or when the user does not know what to query for. In this section, we will describe \seedb and \sbd as examples of visualization recommendation systems that suggest informative data views for jumpstarting further analysis. Then, we will discuss the importance of contextual awareness during dynamic visual data exploration to highlight the challenges and opportunities ahead in this space.
-\subsection{\seedb: Exploring Multi-variate Data Dimensions Through Interesting Visualization Recommendations}
-\par Identifying interesting trends in high-dimensional datasets is often challenging due to the large combination of possible X,Ys for the generated visualizations. To perform this task, the analyst needs to manually create, examine, and compare the relationships between these multi-variate visualizations to discover interesting insights. 
-\par \seedb is a visualization querying and recomendation environment where user can specify a subset of data that they would be interested in exploring, by indicating the x, y axes and aggregation function of its visualization~\cite{Vartak2015}. Then, \seedb searches for other views in the reference that are \textit{interesting} with respect to the input view. \seedb defines a visualization as interesting if it deviates greatly from the specified reference. \seedb performs smart pruning, sharing optimization to make this process faster. The evaluation user study showed that the SEEDB-recommended visualizations are three times more likely to be interesting compared to manually constructed visualizations and provide an effective starting point for further analysis.
-\subsection{\sbd: Promoting Distribution Awareness of Data Subsets with Summary of Visualizations}
+\par While our focus in the previous sections 
+have been on intent-driven queries, 
+where users have some knowledge 
+of the types of visual queries they may be interested in, 
+one of the key goals of visual data exploration 
+is to promote a better understanding of the dataset 
+to enable users to make actionable decisions. 
+Within the minimal setting, we target
+systems that help analysts become more 
+aware of their dataset and visualize 
+where they are in their analysis workflow 
+with minimal required user input. 
+This can often be useful when 
+there is an absence of explicit signals from the user, 
+such as when a user is at the 
+beginning of their analysis 
+(commonly known as the `cold-start' problem) 
+or when the user does not know what to query for. 
+We will first describe \seedb and \sbd as 
+examples of visual query systems 
+that suggest informative data views 
+for jumpstarting further analysis. 
+Then, we will discuss the importance 
+of contextual awareness during dynamic visual data exploration to highlight the challenges and opportunities ahead in this space.
+
+\smallskip
+\stitle{\seedb: Exploring Multi-variate Data Dimensions 
+Through Interesting Visualization Recommendations.}
+Identifying interesting trends in 
+high-dimensional datasets is often challenging 
+due to the large combination of possible X,Ys 
+for the generated visualizations. 
+To perform this task, 
+the analyst needs to manually create, 
+examine, and compare the relationships 
+between these multi-variate visualizations 
+to discover interesting insights. 
+
+\par Within \seedb~\cite{Vartak2015},
+a user can specify a subset of data 
+that they would be interested in exploring. 
+Then, \seedb searches for visualizations
+(i.e., specific combinations of X and Y axes)
+that show how this subset differs from the rest 
+of the data, and are
+therefore {\em interesting}. 
+The evaluation user study showed that 
+\seedb-recommended visualizations are 
+three times more likely to be interesting 
+compared to manually constructed visualizations 
+and provide an effective starting point for further analysis.
+
+
+\smallskip
+\stitle{\sbd: Promoting Distribution Awareness of Data Subsets with Summary of Visualizations.}
 %Through Guided ExplorationNavigating Through
 %understanding distributions (distribution awareness)
 %introduce problem + challenge
-\par Whereas \seedb looks at the space of possible X,Ys for a fixed filter and aggregation, our next system \sbd explore through the space of possible filters for a fixed input X,Y and aggregation function. Common analytics tasks, such as causal inference, feature selection, and outlier detection, require understanding the distributions and patterns present in the visualizations at differing levels of data granularity~\cite{Anand2015,Heer2012,Wu2013}. However, it is often hard to know \textit{what} subset of data contains an insightful distribution to examine. In order to explore different data subsets, an analyst would first have to construct a large number of visualizations corresponding to all possible data subsets, and then navigate through this large space of visualizations to draw meaningful insights. \ccut{While there are some related work in database literature in constructing informative summaries that help guide users through the complex schema of object-oriented databases\cite{McHugh1997,Yu2006}, these are often focused on table and attribute level information, rather than information about derived from the actual data distributions.} The lack of a systematic way to perform these exercises makes the process of manually exploring distributions from all possible data subsets tedious and inefficient~\cite{Sarawagi1998,Sarawagi2000}.
+Whereas \seedb looks at the space of possible X,Ys 
+for given data subset, 
+our next system \sbd explore through the space of possible filters for a fixed input X,Y and aggregation function. Common analytics tasks, such as causal inference, feature selection, and outlier detection, require understanding the distributions and patterns present in the visualizations at differing levels of data granularity~\cite{Anand2015,Heer2012,Wu2013}. However, it is often hard to know \textit{what} subset of data contains an insightful distribution to examine. In order to explore different data subsets, an analyst would first have to construct a large number of visualizations corresponding to all possible data subsets, and then navigate through this large space of visualizations to draw meaningful insights. \ccut{While there are some related work in database literature in constructing informative summaries that help guide users through the complex schema of object-oriented databases\cite{McHugh1997,Yu2006}, these are often focused on table and attribute level information, rather than information about derived from the actual data distributions.} The lack of a systematic way to perform these exercises makes the process of manually exploring distributions from all possible data subsets tedious and inefficient~\cite{Sarawagi1998,Sarawagi2000}.
 %there is no systematic way to perform these exercises.
 % explain what storyboard does
 \par To this end, we developed \sbd, an interactive visualization summarization system that automatically selects a set of visualizations to summarize the distributions within a dataset in an informative manner. Figure~\ref{fig:sbd} illustrates an example dashboard generated by \sbd from the Police Stop Dataset \cite{police}, which contains records of police stops that resulted in a warning, ticket, or an arrest. The attributes in the dataset include driver gender, age, race, and the stop time of day, whether a search was conducted, and whether contraband was found. We requested \sbd to generate a dashboard of 9 bar chart visualizations with x-axis as the stop outcome (whether the police stop resulted in a ticket, warning, or arrest/summons) and y-axis as the percentage of police stops that led to this outcome. First, at the top of our dashboard, \sbd highlights three key data subsets that results in a high arrest rate, which looks very different trend than the overall (where the majority of stops results in tickets). Following along the leftmost branch, we learn that even though in general when a search is conducted, the arrest rate is almost as high as ticketing rate, when we look at the Asian population, whether a search is conducted had less influence on the arrest rate and the trend resembles more like the overall distribution. \sbd make use of context-dependent objective to search for visualizations for which \emph{even the informative parents fail to accurately predict or explain the visualization} to recommend from the data subset lattice. 
@@ -30,7 +82,7 @@ Our formative user study showed that people naturally form their expectations re
 % How ----- is underexplored 
 % future research 
 % building systems that ---
-\subsection{From Distributional to Contextual Awareness: Challenges and Opportunities}
+\subsection{Research Challenges within the Minimal Setting: Distributional to Contextual Awareness}
 \agp{This is a bit all over the place. I think some organization into questions or themes in the same way it was done for the previous section would be valuable. }
 
 \agp{Can we phrase the research challenges in this section as a

@@ -1,11 +1,11 @@
 %!TEX root = main.tex
 
-\section{The Precise Setting: Present-day Visual Querying Systems}\label{sec:precise}
+\section{The Precise Setting}\label{sec:precise}
 While visual data exploration often reveals 
 important anomalies or trends 
 in the data~\cite{Heer2012,Morton2014}, 
 it is challenging to 
-use one-visualization-at-a-time systems to 
+use visualization-at-a-time systems to 
 repeatedly choose the right subset of 
 data and right attributes to visualize
 in order to identify desired insights.
@@ -18,15 +18,15 @@ Astronomers from the the Dark Energy Survey (DES)
 are interested in finding 
 anomalous time series 
 in order to discover 
-astrophysical transients, 
+transients, 
 i.e., objects whose brightness 
 changes dramatically as a function of time, 
 such as supernova explosions or quasars~\cite{Drlica-Wagner2017}. 
 When trying to find celestial objects 
 corresponding to supernovae, 
-which have a specific pattern of brightness over time, 
-scientists individually inspect the corresponding 
-visualizations for each object until 
+with a specific pattern of brightness over time, 
+astronomers individually inspect the corresponding 
+visualizations until 
 they find ones that match the pattern. 
 With more than 400 million objects in their catalog, 
 each having their own set of time series brightness measurement, 
@@ -49,10 +49,10 @@ and manual exploration is impossible.
 There is no systematic way to create, compare, filter,
 and operate on large collections of visualizations.
 
-\subsection{Discovering Patterns, Anomalies/Clusters, and Performing Comparisons with \zv}
+\subsection{Ongoing Work and Research Challenges within the Precise Setting}
 
-
-\par \zv is an example of a visual querying system (VQS) that operates on 
+\stitle{Discovering Patterns and Anomalies/Clusters, and Performing Comparisons with \zv.}
+\zv is an example of a VQS that operates on 
 large collections of visualizations.
 \zv is built on top of a visual query language
 called ZQL, which operates on collections of visualizations, and returns
@@ -83,63 +83,85 @@ including the following on a real-estate dataset:
 queries can be daunting for users who are not comfortable
 with programming.
 Therefore, we extracted a typical workflow
-of visual querying for finding patterns and identifying
-outliers and clusters, and made it expressible
+of visual querying for finding patterns, identifying
+outliers and clusters, and making comparisons, and made it expressible
 via simple interactions---see Figure~\ref{fig:modalities}.
-\agp{refer to the figure as this is described.}
-The user can input their search pattern via a sketch,
-or by inputting a set of points,
+The user can input their search pattern via (a) inputting a set of points,
+(b) a sketch, (c) dragging-and-dropping an existing visualization,
+or (d) inputting an equation, 
 and specify a space of visualizations over which to search.
-The system returns a ranked list of matching visualizations
-for the corresponding ZQL query.
-The system also provides typical trends and outliers
+The system returns a ranked list of matching visualizations, shown in the "Results" pane below the canvas in (b), for the corresponding ZQL query.
+The system also provides typical trends 
+(called "Representative Patterns", highlighted under (c)) and outliers
 for additional context. 
-The user can drag-and-drop one of these visualizations
-into the sketch panel, starting a search with the corresponding
-sketch.
 The user can also switch to a tabular interface wherein
 they can input ZQL queries.  
 Users can also make comparisons between different 
 subsets of the data by examining visualizations 
-of dynamically created classes in \zv~\cite{Lee2017}.\dor{One of the things I tried highlighting here but may not come across as clear was that in the \zv interface we have interactions that cover the discovery goals: different modes of querying (\textit{Find Patterns}), representative/outliers (\textit{Cluster/Outliers}), dynamic classes (\textit{Compare}). This is \zv-interface wise, similar to how above ZQL also covers these capabilities.}
-
+of dynamically created classes in \zv~\cite{Lee2017}.
+Thus, this workflow captures one variation of the three
+discovery goals---finding patterns, identifying outliers/clusters,
+and making comparisons. 
 \begin{figure}[h!]
 \centering
+\vspace{-10pt}
 \includegraphics[width=0.8\textwidth]{figures/modalities.pdf}
 \caption{\zv offers a variety of querying modalities, including: a) uploading a sample pattern from an external dataset as a query, b) sketching a query pattern, c) dragging-and-dropping an existing pattern from the dataset, and d) inputting an equation as a query, from \cite{Lee2017}.}
 \label{fig:modalities}
+\vspace{-10pt}
 \end{figure}
 
 
-\subsection{Other Related Precise Visual Querying Systems}
+\stitle{Other Related Precise Visual Querying Systems.}
+There has been a range of work primarily focused on locating visualizations
+matching certain patterns, including the influential work
+on TimeSearcher~\cite{hochheiser2004dynamic}, where the query is
+specified as a box constraint, and 
+Query-by-Sketch~\cite{wattenberg2001sketching}, where the query is 
+sketched as a pattern. 
+This was applied to search queries within Google Correlate~\cite{mohebbi2011google}. 
+Recent work has also extended this to querying using regular
+expressions~\cite{Zgraggen2015}, while
+others have analyzed the semantics
+of sketches~\cite{Mannino2018,correll2016semantics}.
 
-\agp{For finding patterns: Describe TimeSearcher, Query By Sketch, google correlate, querylines, Correll and Gleicher, Squeries, plus their interactions}
-\dor{Cite also QETCH \cite{Mannino2018}. Added the ZV refs in the bibtex files and copied from ZV paper for reference:
-`One instantiation of VQSs are sketch-to-query interfaces that allows users to sketch the desired ``shape'' of a visualization with the system returning visualizations that look similar~\cite{mohebbi2011google, wattenberg2001sketching,ryall2005querylines}. Other work has explored the 
-types of shape features a user may be interested in for issuing more specific queries~\cite{correll2016semantics}. Additionally, some VQSs support specifying patterns through boxed constraints for range-queries~\cite{Hochheiser2004}, regular expressions~\cite{Zgraggen2015}, and natural language \cite{Gao2015,Setlur2016}. While these systems have shown to be effective for dynamic querying in controlled lab studies, they have not been evaluated in-situ on real-world use cases.'}
-\subsection{Research Challenges within the Precise Setting}
+\stitle{Limitations within the Precise Setting.}
+The most important challenge within the precise setting
+is the following: {\em How do we expose the entire capabilities of
+ \vidaql via intuitive interactions and discoverable
+modules?} So far, most tools that we listed above
+support a restricted set of interactions,
+primarily focused on finding patterns via sketches or box constraints. 
+\zv extends and builds on this 
+by supporting outlier and representative trend discovery
+from the front-end interface. 
+Unfortunately, performing comparisons, deriving explanations, or summaries,
+is hard to do interactively. 
+In fact, deriving explanations or summaries
+is hard to do even with the full power of ZQL, since
+it does not support the synthesis of new information
+that goes beyond simple processing of collections of visualizations. 
+It remains to be seen if and how ZQL can be extended to meet these capabilities.
+Moreover, even for sketching, it would be interesting to see if
+we can support analogous pattern search mechanisms
+for other visualization modalities, such
+as scatterplots
+or heatmaps.
 
-\agp{describe other open questions}
-\agp{{\em 1)How do we express the rest of ZQL with intuitive
-interactions? 2)How can we support analogous pattern search 
-metaphors for other types of visualizations, such as scatterplots
-or heatmaps? 3)ZQL cannot support the synthesis of new information
-that goes beyond processing of visualizations, such
-as explanations, or summarizations---how do we extend
-ZQL to capture these aspects?}}
-\dor{Something that relates to the discussion in the RQ 1)how do we ensure reasonable coverage, when we map from interactions of VQS to underlying QL. 3) advocate for the need for other discovery modules within QL itself to support these.}
-
-\dor{Again I feel like we should not focus an entire section on this, since the Limitations section is more relevant to the flow of the discussion in our paper. We might want to combine this and the previous section under `Existing and Future Research in VQSs' covering both related works and the open questions in this space.}
 
 \subsection{Limitations with the Precise Setting}
-\par \zv was developed in collaboration with
-scientists from astronomy, genetics, 
-and material science via a year-long 
-participatory design process~\cite{Lee2017}. 
-The findings from that study identifies 
-limitations within
-the precise setting that need to be addressed
-within a full-fledged \vida.
+\par Even if we could address 
+the issues within the precise setting
+in the previous section,
+there are some fundamental limitations
+with the precise setting itself 
+that need to be addressed within a full-fledged \vida.
+We discuss these limitations
+in the context of a participatory 
+design process for the development 
+of \zv, in collaboration
+with scientists from astronomy, genetics, 
+and material science~\cite{Lee2017}. 
 
 
 \stitle{The Problem of Interpreting Ambiguous, High-level Queries.}
@@ -199,8 +221,15 @@ Typically, visualization recommendations help
 accelerate the process of discovering 
 interesting aspects of the data by broadening exploration. 
 In Section~\ref{sec:minimal}, we argue 
-that recommendations should not just focus on the
-data discoverability aspect of exploration\agp{what does data discoverability mean?}\dor{I was more referring to how existing systems focusses on increasing breadth-wise exploration so that other views of the data is more discoverable. For data understanding, it's not just about the more views shown the better (e.g. univariate summaries), but considers the cognitive effects of showing particular recommendations (i.e. our \sbd objective, deviation-based interestingness metric in \seedb)}, but also contribute towards helping users become more aware of the distributions in their data and the context of their analysis.
+that recommendations should not just focus on 
+increasing breadth-wise exploration
+so that other views of the data are discoverable,
+but that it should also contribute
+towards helping users become more aware of the 
+distributions and trends in the data,
+as well as the broader context of their analysis.
+
+% \agp{what does data discoverability mean?}\dor{I was more referring to how existing systems focusses on increasing breadth-wise exploration so that other views of the data is more discoverable. For data understanding, it's not just about the more views shown the better (e.g. univariate summaries), but considers the cognitive effects of showing particular recommendations (i.e. our \sbd objective, deviation-based interestingness metric in \seedb)}, but also contribute towards helping users become more aware of the distributions in their data and the context of their analysis.
 % % \subsection{Top-down and Bottom-up Querying Modalities}
 % % \par Our study also revealed the challenges of coming up with a query in a prescriptive manner. 
 % % Need a topic sentence/paragraph
