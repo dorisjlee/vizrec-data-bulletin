@@ -31,14 +31,6 @@ Peter Buneman, Adriane Chapman, and James Cheney.
   on Management of Data}, SIGMOD '06, pages 539--550, New York, NY, USA, 2006.
   ACM.
 
-\bibitem[\protect\citeauthoryear{Chirigati \bgroup \em et al.\egroup
-  }{2016}]{chirigati2016data}
-Fernando Chirigati, Harish Doraiswamy, Theodoros Damoulas, and Juliana Freire.
-\newblock Data polygamy: the many-many relationships among urban
-  spatio-temporal data sets.
-\newblock In {\em Proceedings of the 2016 International Conference on
-  Management of Data}, pages 1011--1025. ACM, 2016.
-
 \bibitem[\protect\citeauthoryear{Correll and
   Gleicher}{2016}]{correll2016semantics}
 Michael Correll and Michael Gleicher.
@@ -108,9 +100,7 @@ Enamul Hoque, Vidya Setlur, Melanie Tory, and Isaac Dykeman.
 H.~V. Jagadish, Adriane Chapman, Aaron Elkiss, Magesh Jayapandian, Yunyao Li,
   Arnab Nandi, and Cong Yu.
 \newblock Making database systems usable.
-\newblock In {\em Proceedings of the 2007 ACM SIGMOD International Conference
-  on Management of Data}, SIGMOD '07, pages 13--24, New York, NY, USA, 2007.
-  ACM.
+\newblock SIGMOD '07, pages 13--24, New York, NY, USA, 2007. ACM.
 
 \bibitem[\protect\citeauthoryear{Kandel \bgroup \em et al.\egroup
   }{2012}]{Kandel2012}
@@ -129,8 +119,8 @@ Nodira Khoussainova, YongChul Kwon, Magdalena Balazinska, and Dan Suciu.
 \bibitem[\protect\citeauthoryear{Lee \bgroup \em et al.\egroup }{}]{Lee2018}
 Doris~Jung{-}Lin Lee, Himel Dev, Huizi Hu, Hazem Elmeleegy, and Aditya~G.
   Parameswaran.
-\newblock Storyboard: Navigating through data slices with hierarchical summary
-  of visualizations.
+\newblock Storyboard: Navigating through data slices with distributional
+  awareness.
 
 \bibitem[\protect\citeauthoryear{Lee \bgroup \em et al.\egroup
   }{2017}]{Lee2017}
@@ -195,9 +185,7 @@ Sudeepa Roy and Dan Suciu.
   }{1998}]{Sarawagi1998}
 Sunita Sarawagi, Rakesh Agrawal, and Nimrod Megiddo.
 \newblock Discovery-driven exploration of olap data cubes.
-\newblock In {\em Proceedings of the 6th International Conference on Extending
-  Database Technology: Advances in Database Technology}, EDBT '98, pages
-  168--182, Berlin, Heidelberg, 1998. Springer-Verlag.
+\newblock EDBT '98, pages 168--182, Berlin, Heidelberg, 1998. Springer-Verlag.
 
 \bibitem[\protect\citeauthoryear{Sarawagi}{2000}]{Sarawagi2000}
 S.~Sarawagi.
