@@ -80,6 +80,13 @@ Jeffrey Heer and Ben Shneiderman.
 \newblock {Interactive Dynamics for Visual Analysis}.
 \newblock {\em ACM Queue}, 10(2):30, 2012.
 
+\bibitem[\protect\citeauthoryear{Hochheiser and
+  Shneiderman}{2004}]{hochheiser2004dynamic}
+Harry Hochheiser and Ben Shneiderman.
+\newblock Dynamic query tools for time series data sets: timebox widgets for
+  interactive exploration.
+\newblock {\em Information Visualization}, 3(1):1--18, 2004.
+
 \bibitem[\protect\citeauthoryear{Hoque \bgroup \em et al.\egroup
   }{2017}]{Hoque2017}
 Enamul Hoque, Vidya Setlur, Melanie Tory, and Isaac Dykeman.
