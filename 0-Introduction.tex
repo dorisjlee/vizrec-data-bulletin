@@ -79,6 +79,14 @@ functionality for the given setting.
 We call these systems Visual Querying Systems, or VQSs for short.
 
 
+\begin{wrapfigure}{l}{0.5\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figures/dimensions_cropped.png}
+\vspace{-10pt}
+\caption{Dimensions of VQSs. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
+\vspace{-15pt}
+\end{wrapfigure}
+
 \par
  We identify five 
 common discovery goals in visual data exploration, organized
@@ -129,6 +137,9 @@ Minimal (Section~\ref{sec:minimal}) &               & \multicolumn{1}{c|}{Storyb
 \caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.\agp{fix this. add specificity, augment references}}\label{fig:table}
 \end{table}
 
+
+
+
 \par
 \stitle{\vida Input Modalities.} To support the spectrum of 
 demands imposed by the
@@ -155,12 +166,22 @@ Given that we expect \vida to support a range of specificities,
 \vida must support both push and pull, with pull decreasing
 in importance, and push rising in importance, as we go from precise to minimal.
 
-\begin{figure}[h!]
+\begin{wrapfigure}{r}{0.5\textwidth}
 \centering
-\includegraphics[width=0.5\linewidth]{figures/VIDA_architecture.png}
-\caption{\vida Architecture\agp{fix; convert figure into a wrapfigure}\label{fig:vida_architecture}
+\includegraphics[width=\linewidth]{figures/VIDA_architecture.png}
+\vspace{-10pt}
+\caption{\vida Architecture\label{fig:vida_architecture}
+\vspace{-15pt}
 }
-\end{figure}
+\end{wrapfigure}
+
+% \begin{wrapfigure}{r}{0.5\textwidth}
+%   \begin{center}
+%     \includegraphics[width=0.48\textwidth]{birds}
+%   \end{center}
+%   \caption{Birds}
+% \end{wrapfigure}
+
 
 
 % Common framework and module means there are underlying functionalities can be shared (e.g. statistical modules, data heavy-lifting operations)
