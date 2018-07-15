@@ -70,27 +70,28 @@ navigating collections of visualizations,
 \vida must be able to support various discovery
 settings. 
 We organize these settings along two
-dimensions, displayed along the columns and 
-rows (respectively) of Table~\ref{fig:table}---first, the overall discovery goal,
+dimensions, displayed along the Y axis and 
+X axis (respectively) of Figure~\ref{fig:dimensions}---first, 
+the overall discovery goal,
 and second, the degree of specificity of the goal.
-We also cite references (described later on)
-for systems that partially provide the necessary
-functionality for the given setting.
-We call these systems Visual Querying Systems, or VQSs for short.
+% We also cite references (described later on)
+% for systems that partially provide the necessary
+% functionality for the given setting.
+% We call these systems Visual Querying Systems, or VQSs for short.
 
 
-\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{wrapfigure}{l}{0.4\textwidth}
 \centering
 \includegraphics[width=\linewidth]{figures/dimensions_cropped.png}
 \vspace{-10pt}
-\caption{Dimensions of VQSs. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:table}
-\vspace{-15pt}
+\caption{The two dimensions of discovery settings. The Y axis corresponds to discovery goals, while the X axis corresponds to increasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:dimensions}
+\vspace{-10pt}
 \end{wrapfigure}
 
 \par
  We identify five 
 common discovery goals in visual data exploration, organized
-along the columns:
+along the Y axis:
 {\em finding patterns}, {\em identifying anomalies/clusters}, {\em summarizing}, 
 {\em performing comparisons}, {\em providing explanations}.
 These five goals borrow borrow from functionalities in existing
@@ -103,40 +104,69 @@ such as extrapolation, supervised learning, and cleaning, among others.
 
 \par 
  We identify three degrees of specificity
-for the discovery goal, organized along the rows:
-{\em precise}, {\em fuzzy}, {\em underspecified}.
+for the discovery goal, organized along the X axis:
+{\em precise}, {\em fuzzy}, {\em minimal}.
 The degree of specificity characterizes the division
 of work between how much user has to specify
 versus how much the system has to automatically
 infer and aid in accomplishing the discovery goal. 
-At the topmost row, the onus is placed on the user
+For the precise setting, the onus is placed on the user
 to provide an exact and complete specification of 
 what the solution to their discovery
 goal must look like;
-at the middle row, the user can provide
+for the fuzzy setting, the user can provide
 a vague specification of what the solution must look like;
-and finally, at the bottom row,
+and finally, for the minimal setting,
 the user provides a minimal specification, or
 leaves the characteristics of the solution underspecified,
 leaving it up to the system to ``fill in'' the rest.
-Naturally, as we proceed down the rows,
+Naturally, as we proceed down the X axis,
 it gets harder for the system to automatically
 interpret what the user might have in mind as a solution
 to their discovery goal.
 
+% \begin{table}[!t]
+% \scriptsize
+% \centering
+% \begin{tabular}{l|l|l|l|l|l}
+% & \multicolumn{5}{c}{Discovery Goals}                                                                     \\ \hline
+% & Find Patterns & Identify Anomalies and Clusters      & Compare           & Summarize  & Explain          \\ \hline
+% Precise (Section~\ref{sec:precise}) & \multicolumn{3}{c|}{Zenvisage~\cite{Lee2017}, ZQL~\cite{Siddiqui2016}}                                      &            &                  \\ \hline
+% Fuzzy (Section~\ref{sec:vague})     & ShapeSearch\cite{Siddiqui2018}   & Scorpion\cite{Wu2013}, Profiler~\cite{Kandel2012}, Natural Language & Natural Language~\cite{Fast2018,Setlur2016,Hoque2017}  &            & Natural Language \\ \hline
+% Minimal (Section~\ref{sec:minimal}) &               & \multicolumn{1}{c|}{Storyboard~\cite{Lee2018}}      & SeeDB~\cite{Vartak2015}, Storyboard & Storyboard & Storyboard      
+% \end{tabular}
+% \caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.\agp{fix this. add specificity, augment references}}\label{fig:table}
+% \end{table}
+
 \begin{table}[!t]
 \scriptsize
 \centering
-\begin{tabular}{l|l|l|l|l|l}
-& \multicolumn{5}{c}{Discovery Goals}                                                                     \\ \hline
-& Find Patterns & Identify Anomalies and Clusters      & Compare           & Summarize  & Explain          \\ \hline
-Precise (Section~\ref{sec:precise}) & \multicolumn{3}{c|}{Zenvisage~\cite{Lee2017}, ZQL~\cite{Siddiqui2016}}                                      &            &                  \\ \hline
-Fuzzy (Section~\ref{sec:vague})     & ShapeSearch\cite{Siddiqui2018}   & Scorpion\cite{Wu2013}, Profiler~\cite{Kandel2012}, Natural Language & Natural Language~\cite{Fast2018,Setlur2016,Hoque2017}  &            & Natural Language \\ \hline
-Minimal (Section~\ref{sec:minimal}) &               & \multicolumn{1}{c|}{Storyboard~\cite{Lee2018}}      & SeeDB~\cite{Vartak2015}, Storyboard & Storyboard & Storyboard      
+\begin{tabular}{l|l|l|p{7.5cm}}
+VQS & Discovery Goals Covered & Specificity & Interactions Supported \\ \hline
+
+Zenvisage~\cite{Lee2017,Siddiqui2016} & Find Patterns, Cluster/Outliers, Compare & Precise & Interactions (Clicking, Sketch, Drag-and-drop), Query Language \\
+ShapeSearch~\cite{Siddiqui2018} & Find Patterns & Fuzzy & Interactions (Sketch), Natural Language, Query Language \\
+SeeDB~\cite{Vartak2015} & Compare & Fuzzy & Interactions (Clicking), Query Language \\
+Data Polygamy~\cite{chirigati2016data} & Compare, Explain & Fuzzy & Query Language \\
+Storyboard~\cite{Lee2018} & & & \\
+TimeSearcher & & & \\
+Scorpion~\cite{Wu2013} & & & \\
+Profiler~\cite{Kandel2012} & & & \\
 \end{tabular}
-\caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.\agp{fix this. add specificity, augment references}}\label{fig:table}
+\vspace{-10pt}
+\caption{A Sample of Visual Query Systems\agp{complete}}\label{fig:table}
+\vspace{-10pt}
 \end{table}
 
+
+% & \multicolumn{5}{c}{Discovery Goals}                                                                     \\ \hline
+% & Find Patterns & Identify Anomalies and Clusters      & Compare           & Summarize  & Explain          \\ \hline
+% Precise (Section~\ref{sec:precise}) & \multicolumn{3}{c|}{Zenvisage~\cite{Lee2017}, ZQL~\cite{Siddiqui2016}}                                      &            &                  \\ \hline
+% Fuzzy (Section~\ref{sec:vague})     & ShapeSearch\cite{Siddiqui2018}   & Scorpion\cite{Wu2013}, Profiler~\cite{Kandel2012}, Natural Language & Natural Language~\cite{Fast2018,Setlur2016,Hoque2017}  &            & Natural Language \\ \hline
+% Minimal (Section~\ref{sec:minimal}) &               & \multicolumn{1}{c|}{Storyboard~\cite{Lee2018}}      & SeeDB~\cite{Vartak2015}, Storyboard & Storyboard & Storyboard      
+% \end{tabular}
+% \caption{Overview of the systems described in this paper. Columns are organized into discovery goals and rows are ordered by decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.\agp{fix this. add specificity, augment references}}\label{fig:table}
+% \end{table}
 
 
 

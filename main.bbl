@@ -31,6 +31,14 @@ Peter Buneman, Adriane Chapman, and James Cheney.
   on Management of Data}, SIGMOD '06, pages 539--550, New York, NY, USA, 2006.
   ACM.
 
+\bibitem[\protect\citeauthoryear{Chirigati \bgroup \em et al.\egroup
+  }{2016}]{chirigati2016data}
+Fernando Chirigati, Harish Doraiswamy, Theodoros Damoulas, and Juliana Freire.
+\newblock Data polygamy: the many-many relationships among urban
+  spatio-temporal data sets.
+\newblock In {\em Proceedings of the 2016 International Conference on
+  Management of Data}, pages 1011--1025. ACM, 2016.
+
 \bibitem[\protect\citeauthoryear{Cui and Widom}{2003}]{Cui2003}
 Y.~Cui and J.~Widom.
 \newblock Lineage tracing for general data warehouse transformations.
@@ -116,6 +124,13 @@ Doris~Jung{-}Lin Lee, John Lee, Tarique Siddiqui, Jaewoo Kim, Karrie
 \newblock Accelerating scientific data exploration via visual query systems.
 \newblock {\em CoRR}, abs/1710.00763, 2017.
 
+\bibitem[\protect\citeauthoryear{Meliou \bgroup \em et al.\egroup
+  }{2010}]{meliou2010causality}
+Alexandra Meliou, Wolfgang Gatterbauer, Joseph~Y Halpern, Christoph Koch,
+  Katherine~F Moore, and Dan Suciu.
+\newblock Causality in databases.
+\newblock {\em IEEE Data Eng. Bull.}, 33(EPFL-ARTICLE-165841):59--67, 2010.
+
 \bibitem[\protect\citeauthoryear{Morton \bgroup \em et al.\egroup
   }{2014}]{Morton2014}
 Kristi Morton, Magdalena Balazinska, Dan Grossman, and Jock Mackinlay.
@@ -142,6 +157,12 @@ E.~Pierson, C.~Simoiu, J.~Overgoor, S.~Corbett-Davies, V.~Ramachandran,
   C.~Phillips, and S.~Goel.
 \newblock A large-scale analysis of racial disparities in police stops across
   the united states, 2017.
+
+\bibitem[\protect\citeauthoryear{Roy and Suciu}{2014}]{roy2014formal}
+Sudeepa Roy and Dan Suciu.
+\newblock A formal approach to finding explanations for database queries.
+\newblock In {\em Proceedings of the 2014 ACM SIGMOD international conference
+  on Management of data}, pages 1579--1590. ACM, 2014.
 
 \bibitem[\protect\citeauthoryear{Sarawagi \bgroup \em et al.\egroup
   }{1998}]{Sarawagi1998}
