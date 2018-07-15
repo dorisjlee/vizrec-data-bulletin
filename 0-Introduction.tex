@@ -41,7 +41,7 @@ or the attributes (or combinations
 thereof) that can be visualized. 
 If we add in various visualization modalities, encodings,
 aesthetics, binning methods, and transformations,
-this space becomes even larger.
+this space becomes even larger. \dor{say this is out of scope for this paper, e.g. Voyager ~\cite{Wongsuphasawat2017}}
 
 
 \par
@@ -95,8 +95,8 @@ common discovery goals in visual data exploration, organized
 along the Y axis:
 {\em finding patterns}, {\em identifying anomalies/clusters}, {\em summarizing}, 
 {\em performing comparisons}, {\em providing explanations}.
-These five goals borrow borrow from functionalities in existing
-systems, as well as related visualization task taxonomies~\cite{Heer2012,Amar2005}.
+These five goals borrow from functionalities in existing
+systems, as well as related visualization task taxonomies~\cite{Amar2005,Heer2012}.
 We omit low-level goals such as filtering or sorting, since
 these functionalities are common in 
 visualization-at-a-time tools and toolkits.
@@ -237,11 +237,12 @@ for certain settings and input modalities.
 We will describe some of these systems later on in the paper. 
 Since all of these systems allow users to query data {\em visually},
 we call these systems Visual Querying Systems, or VQSs for short.
+\dor{Should we say something about VQSs using perceptually-aware objectives?)}
 We restrict our attention to systems that provide 
 some interactive interface or query language to express
 the discovery goal, as well as
 some optimization capabilities to facilitate the 
-efficient search for visual insights. 
+efficient search for visual insights. \dor{Our discussion in this paper focuses on the interface and interactions, rather than optimizations (sampling, pruning, etc.) commonly used in VQSs[CITE]. }
 % We also cite references (described later on)
 % for systems that partially provide the necessary
 % functionality for the given setting.
@@ -251,12 +252,12 @@ efficient search for visual insights.
 \par
 \stitle{Outline.}
 The rest of our paper is organized along the degree of specificity
-of discovery goal, and we will allude to the specific discovery
+of discovery goal \dor{of input query?}, and we will allude to the specific discovery
 goals as well as input modalities as we go along. 
-The degree of specificity of the discovery goal is the factor
+The degree of input specificity is the factor
 that most significantly affects the architecture of \vida,
 with the complexity increasing as the specificity decreases. 
-
+\dor{Clarify complexity as in system has to do more `guesswork'}
 \par We begin by discussing the 
 the {\em precise} setting (Section~\ref{sec:precise}).
 We describe \zv~\cite{Siddiqui2016} 
@@ -295,7 +296,7 @@ a high-level understanding of the data (Section~\ref{sec:minimal}).
 \agp{We should clarify somewhere that most of our concern is going to 
 be the interfaces or query languages, as opposed to optimization,
 leveraging parallelism, MQO, sampling, pruning,
-which has seen some work --- ZQL, SeeDB, ...}
+which has seen some work --- ZQL, SeeDB, ...}\dor{addressed above}
 
 % In addition, we find that users often do not have a good idea of what they want to query for without looking at example visualizations or summaries of the data. To bridge the gap between user's high-level intent and what the system operates as inputs, we advocate that future research needs to look beyond simple precise visual querying by : 1) making visual query system more expressive by supporting a wider class of vague queries (Section~\ref{sec:vague}) and 2) making it easier to know what to query by recommending visualizations that facilitate data awareness (Section~\ref{sec:minimal}).
 % \par Accordingly, the next row in the table highlights a growing class of \textit{intelligent visual querying system} (IVQS) that interprets the `vagueness' of queries and allow users to tweak or refine their queries through a feedback mechanism. \dor{I think we need to expand this definition depending on the new content that we will be adding, ShapeSearch, SeeDB, Scorpion?} 

@@ -5,7 +5,7 @@ While visual data exploration often reveals
 important anomalies or trends 
 in the data~\cite{Heer2012,Morton2014}, 
 it is challenging to 
-use visualization-at-a-time systems to 
+use one-visualization-at-a-time systems to 
 repeatedly choose the right subset of 
 data and right attributes to visualize
 in order to identify desired insights.
@@ -37,7 +37,7 @@ The astronomers instead rely on guess-work
 or prior evidence to explore the visualizations,
 rather than directly ``searching'' for the patterns
 that they care about. 
-While a few astronomers do use 
+While most astronomers do use 
 programming tools, such as Python and R,
 it is cumbersome to express each new need
 via carefully hand-optimized code. 
@@ -73,7 +73,7 @@ ZQL can be used to construct a rich variety of queries,
 including the following on a real-estate dataset:
 \squishlist
 	\item {\em Find Patterns.} Find visualizations of cities whose sales price over time is similar to Manhattan. 
-	\item {\em Identify Anomalies.} Find visualizations of cities with an increasing sales price trend, with a simultaneous increasing foreclosure rate trend.
+	\item {\em Identify Anomalies.} Find visualizations of cities with both an increasing sales price trend and an increasing foreclosure rate trend.
 	\item {\em Perform Comparisons.} For New York and Champaign, find visualizations on which they differ the most.
 	\item {\em Find Patterns, followed by Clusters.} For cities that are similar
 	to New York on sales price trends, find typical trends for foreclosure rates.
@@ -101,7 +101,7 @@ The user can also switch to a tabular interface wherein
 they can input ZQL queries.  
 Users can also make comparisons between different 
 subsets of the data by examining visualizations 
-of dynamically created classes in \zv~\cite{Lee2017}.
+of dynamically created classes in \zv~\cite{Lee2017}.\dor{One of the things I tried highlighting here but may not come across as clear was that in the \zv interface we have interactions that cover the discovery goals: different modes of querying (\textit{Find Patterns}), representative/outliers (\textit{Cluster/Outliers}), dynamic classes (\textit{Compare}). This is \zv-interface wise, similar to how above ZQL also covers these capabilities.}
 
 \begin{figure}[h!]
 \centering
@@ -114,19 +114,22 @@ of dynamically created classes in \zv~\cite{Lee2017}.
 \subsection{Other Related Precise Visual Querying Systems}
 
 \agp{For finding patterns: Describe TimeSearcher, Query By Sketch, google correlate, querylines, Correll and Gleicher, Squeries, plus their interactions}
-
+\dor{Cite also QETCH \cite{Mannino2018}. Added the ZV refs in the bibtex files and copied from ZV paper for reference:
+`One instantiation of VQSs are sketch-to-query interfaces that allows users to sketch the desired ``shape'' of a visualization with the system returning visualizations that look similar~\cite{mohebbi2011google, wattenberg2001sketching,ryall2005querylines}. Other work has explored the 
+types of shape features a user may be interested in for issuing more specific queries~\cite{correll2016semantics}. Additionally, some VQSs support specifying patterns through boxed constraints for range-queries~\cite{Hochheiser2004}, regular expressions~\cite{Zgraggen2015}, and natural language \cite{Gao2015,Setlur2016}. While these systems have shown to be effective for dynamic querying in controlled lab studies, they have not been evaluated in-situ on real-world use cases.'}
 \subsection{Research Challenges within the Precise Setting}
 
 \agp{describe other open questions}
-\agp{{\em How do we express the rest of ZQL with intuitive
-interactions? How can we support analogous pattern search 
+\agp{{\em 1)How do we express the rest of ZQL with intuitive
+interactions? 2)How can we support analogous pattern search 
 metaphors for other types of visualizations, such as scatterplots
-or heatmaps? ZQL cannot support the synthesis of new information
+or heatmaps? 3)ZQL cannot support the synthesis of new information
 that goes beyond processing of visualizations, such
 as explanations, or summarizations---how do we extend
 ZQL to capture these aspects?}}
+\dor{Something that relates to the discussion in the RQ 1)how do we ensure reasonable coverage, when we map from interactions of VQS to underlying QL. 3) advocate for the need for other discovery modules within QL itself to support these.}
 
-
+\dor{Again I feel like we should not focus an entire section on this, since the Limitations section is more relevant to the flow of the discussion in our paper. We might want to combine this and the previous section under `Existing and Future Research in VQSs' covering both related works and the open questions in this space.}
 
 \subsection{Limitations with the Precise Setting}
 \par \zv was developed in collaboration with
@@ -196,8 +199,8 @@ Typically, visualization recommendations help
 accelerate the process of discovering 
 interesting aspects of the data by broadening exploration. 
 In Section~\ref{sec:minimal}, we argue 
-that recommendations should not just focus on 
-data discoverability aspect of exploration\agp{what does data discoverability mean?}, but also contribute towards helping users become more aware of the distributions in their data and the context of their analysis.
+that recommendations should not just focus on the
+data discoverability aspect of exploration\agp{what does data discoverability mean?}\dor{I was more referring to how existing systems focusses on increasing breadth-wise exploration so that other views of the data is more discoverable. For data understanding, it's not just about the more views shown the better (e.g. univariate summaries), but considers the cognitive effects of showing particular recommendations (i.e. our \sbd objective, deviation-based interestingness metric in \seedb)}, but also contribute towards helping users become more aware of the distributions in their data and the context of their analysis.
 % % \subsection{Top-down and Bottom-up Querying Modalities}
 % % \par Our study also revealed the challenges of coming up with a query in a prescriptive manner. 
 % % Need a topic sentence/paragraph
