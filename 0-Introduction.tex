@@ -52,7 +52,7 @@ latter concerns are the focus of recent work~\cite{Wongsuphasawat2017}.)
 \vspace{-10pt}
 \includegraphics[width=\linewidth]{figures/dimensions_cropped.png}
 \vspace{-15pt}
-\caption{The two dimensions of discovery settings. The Y axis corresponds to discovery goals, while the X axis corresponds to increasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:dimensions}
+\caption{The two dimensions of discovery settings. The Y axis depicts the different discovery goals, while the X axis characterizes decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:dimensions}
 \vspace{-15pt}
 \end{wrapfigure}
 
@@ -63,19 +63,11 @@ intelligent,
 interactive, understandable, usable, and
 enjoyable tool that can help 
 data scientists navigate
-collections of visualizations,
-and does so across the range of possible analysis
-goals and modalities that data scientists may 
-require.
+collections of visualizations, across a range of possible analysis goals and modalities that data scientists may require.
 We term our hypothesized comprehensive tool \vida,
 short for {\em VIsual Discovery Assistant}.
 Data scientists can specify any discovery
-goal at a high level,
-in one of many intuitive input modalities,
-with \vida 
-automatically 
-traversing visualizations to provide
-solutions or partial solutions for the
+goal at a high level, in one of many intuitive input modalities supported in \vida, with \vida automatically traversing visualizations to provide solution or guidance for the
 specified discovery goal, thereby
 eliminating the tedium and wasted
 labor of comparable visualization-at-a-time 
@@ -103,11 +95,7 @@ along the Y axis:
 {\em performing comparisons}, {\em providing explanations}.
 These five goals borrow from functionalities in existing
 systems, as well as related visualization task taxonomies~\cite{Amar2005,Heer2012}.
-We omit low-level goals such as filtering or sorting, since
-these functionalities are common in 
-visualization-at-a-time tools and toolkits.
-We also omit goals that go beyond visual data exploration,
-such as extrapolation, supervised learning, and cleaning, among others. 
+We omit low-level goals such as filtering or sorting, since these functionalities are common in existing visualization-at-a-time tools and toolkits. We also omit goals that go beyond visual data exploration, such as extrapolation, supervised learning, and cleaning, among others. 
 
 \begin{wrapfigure}{r}{0.5\textwidth}
 \centering
@@ -177,32 +165,16 @@ discovery settings described above, \vida
 must support a range of interactive input modalities,
 as displayed in Figure~\ref{fig:vida_architecture},
 catering to a range of user expertise and preferences.
-These input modalities include 
+These input modalities include: 
 \squishlist
-	\item natural language, via a keyword search box, or a dialog or conversational interface;
 	\item interactions, either with an existing visualization, such as brushing-and-linking or hovering, or those that construct a new one, such as drag-and-drop or sketching; and
-	\item restricted template queries, involving selection of operations and operands from a drop-down menu.
+	\item restricted template queries, involving selection of operators and operands from a drop-down menu; and
+	\item natural language, via a keyword search box, dialog, or conversational interface.
 \squishend
 Each of these inputs are compiled down
 into a query in a query language, called \vidaql.
 Alternatively, expert users may directly invoke \vidaql queries.
-\vidaql queries will natively support the five discovery goals,
-and will also support combinations thereof, e.g., pattern search followed by 
-summarization. 
-Another important element is how much does a user actively ``request'' (pull)
-versus \vida ``recommending'' visualizations (push). 
-Given that we expect \vida to support a range of specificities,
-\vida must support both push and pull, with pull decreasing
-in importance, and push rising in importance, as we go from precise to minimal.
-
-
-
-% \begin{wrapfigure}{r}{0.5\textwidth}
-%   \begin{center}
-%     \includegraphics[width=0.48\textwidth]{birds}
-%   \end{center}
-%   \caption{Birds}
-% \end{wrapfigure}
+\vidaql queries will natively support the five discovery goals and combinations thereof, e.g., summarization followed by pattern search. Another important element is how much does a user actively requests for visualizations (``pull'') versus how much \vida recommends visualizations (``push''). Given that we expect \vida to support a range of specificities, \vida must support both push and pull, with pull decreasing in importance and push gaining importance, as we go from the precise to minimal setting.
 
 
 
@@ -227,14 +199,11 @@ we call these systems {\em Visual Querying Systems}, or VQSs for short.
 VQSs typically {\em (i)} 
 employ objectives that are perceptually-aware,
 taking into account for the fact that the results are typically
-consumed by a human data scientist, rather than an algorithm;
-{\em (ii)} 
-provide some interactive interface or declarative capabilities
+consumed by a human analyst, rather than an algorithm;
+{\em (ii)} provide some interactive interface or declarative capabilities
 to express the discovery goal as a ``what'' rather than a ``how'';
-and
-{\em (iii)}
-possess optimization capabilities to facilitate
-the efficient search for visual insights. 
+and {\em (iii)} possess optimization capabilities to facilitate
+the efficient discovery of visual insights. 
 
 
 \begin{table}[!t]
@@ -285,25 +254,18 @@ of having to manually examine large numbers
 of visualizations for a given discovery goal, 
 which can be error-prone and inefficient.
 
-
-
-
 \par However, a design study using \zv demonstrates
 that the precise setting is insufficient for
 addressing all of the demands of real-world use-cases~\cite{Lee2017}.
 In particular, users do not have
-a clear understanding of their intent or specification 
-without looking
-at example visualizations or summaries of the data,
-and at the same time, their intent or specification is
-often not expressible clearly, requiring 
-vague or fuzzy high-level notions.
+a clear understanding of their querying intent without looking at example visualizations or summaries of the data, and even when they do, their intent involves
+vague or high-level notions that can not be expressed clearly.
 
-To bridge the gap between the user's high-level
+\par To bridge the gap between the user's high-level
 intent and the system demands,
 we outline a set of research challenges
 that goes beyond simple precise visual querying, by
-(a) supporting a wider class of vague or ``high-level''
+(a) supporting a wider class of vague or ``fuzzy'' high-level
 queries, thereby increasing the expressiveness
 of \vida (Section~\ref{sec:vague});
 and 
@@ -323,12 +285,10 @@ optimization is crucial to try to traverse the space
 of visualizations and return results in an interactive manner.
 A range of techniques may be adopted for this purpose,
 including parallelism, multi-query optimization, sampling,
-pruning, and pre-computation~\cite{Vartak2015,Siddiqui2016}.
+pruning, and pre-computation~\cite{Siddiqui2016,Vartak2015}.
 We expect a similar combination of techniques to be applicable to
-each of the settings that we consider.
-So overall, to keep the scope of this paper limited, we have
-decided to avoid describing optimization aspects, 
-focusing on the interfaces and interactions instead.
+each of the settings that we consider. To limit the scope of this paper, we have
+decided to avoid describing optimization aspects and focus on the interfaces and interactions instead.
 
 
 % \dor{Our discussion in this paper focuses on the interface and interactions, rather than optimizations (sampling, pruning, etc.) commonly used in VQSs[CITE]. }

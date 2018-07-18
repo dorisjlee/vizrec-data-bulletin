@@ -1,13 +1,13 @@
 %!TEX root = main.tex
 
-\section{The Precise Setting}\label{sec:precise}
+\section{The Precise Setting: Existing Visual Query Systems}\label{sec:precise}
 While visual data exploration often reveals 
 important anomalies or trends 
 in the data~\cite{Heer2012,Morton2014}, 
 it is challenging to 
 use visualization-at-a-time systems to 
-repeatedly choose the right subset of 
-data and right attributes to visualize
+repeatedly choose the right subsets of 
+data and attributes to visualize
 in order to identify desired insights.
 We first motivate
 the precise setting using a use-case from
@@ -29,21 +29,21 @@ astronomers individually inspect the corresponding
 visualizations until 
 they find ones that match the pattern. 
 With more than 400 million objects in their catalog, 
-each having their own set of time series brightness measurement, 
+each having their own set of time series brightness measurements, 
 manually exploring so many 
 visualizations is not only error-prone, 
 but also overwhelming.
-The astronomers instead rely on guess-work 
+Many astronomers instead rely on guess-work 
 or prior evidence to explore the visualizations,
 rather than directly ``searching'' for the patterns
 that they care about. 
 While most astronomers do use 
 programming tools, such as Python and R,
-it is cumbersome to express each new need
+it is cumbersome to express each new information need
 via carefully hand-optimized code. 
 The astronomy use case highlights a 
 common challenge in visual data exploration,
-where there are a number of visualizations
+where there are often a large number of visualizations
 for each discovery goal,
 and manual exploration is impossible.
 There is no systematic way to create, compare, filter,
@@ -59,7 +59,7 @@ called ZQL, which operates on collections of visualizations, and returns
 collections of visualizations,
 using primitives such as visualization composition,
 sorting, and filtering~\cite{Siddiqui2016}. 
-In addition, via user defined functions (also provided as built-ins),
+In addition, via user-defined functions (also provided as built-ins),
 ZQL can compute the distance for a visualization from another---and this
 distance can be used as a building block for more complex
 operations, such as the first three discovery goals listed
