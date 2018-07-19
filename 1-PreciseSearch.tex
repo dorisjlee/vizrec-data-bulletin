@@ -74,7 +74,7 @@ including the following on a real-estate dataset:
 \squishlist
 	\item {\em Find Patterns.} Find visualizations of cities whose sales price over time is similar to Manhattan. 
 	\item {\em Identify Anomalies.} Find visualizations of cities with both an increasing sales price trend and an increasing foreclosure rate trend.
-	\item {\em Perform Comparisons.} For New York and Champaign, find visualizations on which they differ the most.
+	\item {\em Perform Comparisons.} Find visualizations for which New York and Champaign differ the most.
 	\item {\em Find Patterns, followed by Clusters.} For cities that are similar
 	to New York on sales price trends, find typical trends for foreclosure rates.
 \squishend
@@ -85,14 +85,13 @@ with programming.
 Therefore, we extracted a typical workflow
 of visual querying for finding patterns, identifying
 outliers and clusters, and making comparisons, and made it expressible
-via simple interactions---see Figure~\ref{fig:modalities}.
-The user can input their search pattern via (a) inputting a set of points,
+via simple interactions. As shown in Figure~\ref{fig:modalities}, the user can input their search pattern via (a) inputting a set of points,
 (b) a sketch, (c) dragging-and-dropping an existing visualization,
 or (d) inputting an equation, 
 and specify a space of visualizations over which to search.
-The system returns a ranked list of matching visualizations, shown in the "Results" pane below the canvas in (b), for the corresponding ZQL query.
+The system returns a ranked list of matching visualizations, shown in the ``Results'' pane below the canvas in (b), for the corresponding ZQL query.
 The system also provides typical trends 
-(called "Representative Patterns", highlighted under (c)) and outliers
+(called ``Representative Patterns'', highlighted under (c)) and outliers
 for additional context. 
 The user can also switch to a tabular interface wherein
 they can input ZQL queries.  
@@ -123,7 +122,7 @@ This was applied to search queries within Google Correlate~\cite{mohebbi2011goog
 Recent work has also extended this to querying using regular
 expressions~\cite{Zgraggen2015}, while
 others have analyzed the semantics
-of sketches~\cite{Mannino2018,correll2016semantics}.
+of sketches~\cite{correll2016semantics,Mannino2018}.
 
 \stitle{Limitations within the Precise Setting.}
 The most important challenge within the precise setting
@@ -144,7 +143,7 @@ that goes beyond simple processing of collections of visualizations.
 It remains to be seen if and how ZQL can be extended to meet these capabilities.
 Moreover, even for sketching, it would be interesting to see if
 we can support analogous pattern search mechanisms
-for other visualization modalities, such
+for other visualization types, such
 as scatterplots
 or heatmaps.
 
@@ -224,7 +223,7 @@ In Section~\ref{sec:minimal}, we argue
 that recommendations should not just focus on 
 increasing breadth-wise exploration
 so that other views of the data are discoverable,
-but that it should also contribute
+but they should also contribute
 towards helping users become more aware of the 
 distributions and trends in the data,
 as well as the broader context of their analysis.
