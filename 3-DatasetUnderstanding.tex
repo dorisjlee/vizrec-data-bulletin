@@ -31,7 +31,7 @@ of contextual awareness during dynamic visual data exploration to highlight the 
 Through Interesting Visualization Recommendations.}
 Identifying interesting trends in 
 high-dimensional datasets is often challenging 
-due to the large combination of possible X,Ys 
+due to the large combination of possible X,Y axes 
 for the generated visualizations. 
 To perform this task, users need to manually create, examine, and compare relationships between these multi-variate visualizations 
 to discover interesting insights. 
@@ -61,12 +61,10 @@ anomalies in data.
 %Through Guided ExplorationNavigating Through
 %understanding distributions (distribution awareness)
 %introduce problem + challenge
-Whereas \seedb looks at the space of possible X and Y axes
-for given data subset, 
-our recent system \sbd explores 
+Whereas \seedb looks at the space of possible X and Y axes for a given data subset, our recent system \sbd explores 
 the space of possible subsets 
 (or subpopulations) of data,
-for a fixed X and Y axis.
+for fixed X and Y axes.
 Common analytics tasks, 
 such as causal inference, 
 feature selection, and outlier detection, 
@@ -116,8 +114,8 @@ Following along the leftmost branch, we learn that even though in general when a
 almost as high as ticketing rate, 
 when we look at the Asian population, 
 whether a search is conducted had less influence 
-on the arrest rate and the trend resembles more like the overall distribution. 
-\sbd make use of a context-dependent objective 
+on the arrest rate and the trend more resembles the overall distribution. 
+\sbd makes use of a context-dependent objective 
 to search for visualizations within 
 the data subset lattice
 for which \emph{even the informative parents---i.e., the parent visualization
@@ -177,7 +175,7 @@ on the limited number of visualizations
 \par Contextual awareness is the aspect of 
 data understanding related to 
 the \textit{situation} (what is the information 
-that I'm currently looking and how did it come about?) 
+that I'm currently looking at and how did it come about?) 
 and \textit{history} (what have I explored in the past 
 and where should I look next?) of exploration. 
 Situational understanding involves recognizing 
