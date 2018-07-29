@@ -141,7 +141,8 @@ Miro Mannino and Azza Abouzied.
 Alexandra Meliou, Wolfgang Gatterbauer, Joseph~Y Halpern, Christoph Koch,
   Katherine~F Moore, and Dan Suciu.
 \newblock Causality in databases.
-\newblock {\em IEEE Data Eng. Bull.}, 33(EPFL-ARTICLE-165841):59--67, 2010.
+\newblock {\em IEEE Data Engineering Bulletin}, 33(EPFL-ARTICLE-165841):59--67,
+  2010.
 
 \bibitem[\protect\citeauthoryear{{Mohebbi et al.}}{2011}]{mohebbi2011google}
 {Mohebbi et al.}
@@ -163,7 +164,7 @@ Arnab Nandi, Lilong Jiang, and Michael Mandel.
 \newblock {\em Proceedings of the VLDB Endowment}, 7(4):289--300, 2013.
 
 \bibitem[\protect\citeauthoryear{Olston and Chi}{2003}]{Olston2003}
-Christopher Olston and E~D~H Chi.
+Christopher Olston and Ed~Chi.
 \newblock {ScentTrails: Integrating browsing and searching on the Web}.
 \newblock {\em ACM Transactions on Computer Human Interaction TOCHI},
   10(3):177--197, 2003.
@@ -237,7 +238,8 @@ C.~Stolte, D.~Tang, and P.~Hanrahan.
 Manasi Vartak, Samuel Madden, and Aditya~N Parmeswaran.
 \newblock {SEEDB : Supporting Visual Analytics with Data-Driven
   Recommendations}.
-\newblock 2015.
+\newblock {\em Proceedings of the VLDB Endowment, Volume 8, No. 13, 2015},
+  2015.
 
 \bibitem[\protect\citeauthoryear{Vartak \bgroup \em et al.\egroup
   }{2017}]{Vartak2017}
@@ -269,9 +271,9 @@ Wesley Willett, Jeffrey Heer, and Maneesh Agrawala.
   }{2017}]{Wongsuphasawat2017}
 Kanit Wongsuphasawat, Zening Qu, Dominik Moritz, Riley Chang, Felix Ouk,
   Anushka Anand, Jock Mackinlay, Bill Howe, and Jeffrey Heer.
-\newblock {Voyager 2 : Augmenting Visual Analysis with Partial View
-  Specifications}.
-\newblock 2017.
+\newblock Voyager 2: Augmenting visual analysis with partial view
+  specifications.
+\newblock In {\em ACM Human Factors in Computing Systems (CHI)}, 2017.
 
 \bibitem[\protect\citeauthoryear{Woodruff and Stonebraker}{1997}]{Woodruff1997}
 Allison Woodruff and Michael Stonebraker.
