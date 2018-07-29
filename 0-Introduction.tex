@@ -52,7 +52,7 @@ latter concerns are the focus of recent work~\cite{Wongsuphasawat2017}.)
 \vspace{-10pt}
 \includegraphics[width=\linewidth]{figures/dimensions_cropped.png}
 \vspace{-15pt}
-\caption{The two dimensions of discovery settings. The Y axis depicts the different discovery goals, while the X axis characterizes decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:dimensions}
+\caption{The two dimensions of discovery settings. The Y axis depicts the different discovery goals ordered in roughly increasing complexity, while the X axis characterizes decreasing levels of query specificity and correspondingly increasing levels of autonomous assistance.}\label{fig:dimensions}
 \vspace{-15pt}
 \end{wrapfigure}
 
@@ -95,11 +95,12 @@ along the Y axis:
 {\em performing comparisons}, {\em providing explanations}.
 These five goals borrow from functionalities in existing
 systems, as well as related visualization task taxonomies~\cite{Amar2005,Heer2012}.
+They are organized along the Y axis in a sequence of roughly increasing complexity; however, we must emphasize that these goals are distinct from one other. 
 We omit low-level goals such as filtering or sorting, since these functionalities are common in existing visualization-at-a-time tools and toolkits. We also omit goals that go beyond visual data exploration, such as extrapolation, supervised learning, and cleaning, among others. 
 
 \begin{wrapfigure}{r}{0.5\textwidth}
 \centering
-\vspace{-10pt}
+\vspace{-15pt}
 \includegraphics[width=\linewidth]{figures/VIDA_architecture.png}
 \vspace{-25pt}
 \caption{\vida Architecture\label{fig:vida_architecture}
@@ -126,10 +127,10 @@ and finally, for the minimal setting,
 the user provides a minimal specification, or
 leaves the characteristics of the solution underspecified,
 leaving it up to the system to ``fill in'' the rest.
-Naturally, as we proceed along the X axis,
+As we proceed along the X axis,
 it gets harder for the system to automatically
 interpret what the user might have in mind as a solution
-to their discovery goal.
+to their goal.
 
 
 % \begin{table}[!t]
@@ -247,7 +248,7 @@ the system has to do more ``guesswork'' to support underspecified goals.
 \par We begin by discussing the 
 the {\em precise} setting (Section~\ref{sec:precise}).
 We describe \zv~\cite{Siddiqui2016} 
-as an example of a solution for
+as a partial solution for
 this setting, and thereby a starting point for \vida,
 partially eliminating the problem
 of having to manually examine large numbers 
