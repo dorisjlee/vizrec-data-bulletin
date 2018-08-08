@@ -1,7 +1,7 @@
-# TEX=/usr/local/texlive/2014/bin/universal-darwin/pdflatex
-# BIBTEX=/usr/local/texlive/2014/bin/universal-darwin/bibtex
-TEX=pdflatex
-BIBTEX=bibtex
+TEX=/usr/local/texlive/2014/bin/universal-darwin/pdflatex
+BIBTEX=/usr/local/texlive/2014/bin/universal-darwin/bibtex
+#TEX=pdflatex
+#BIBTEX=bibtex
 DOC := VIDA_camera_ready
 BIB := reference.bib
 SRCS := $(wildcard *.tex) $(BIB) $(FIGS) Makefile
